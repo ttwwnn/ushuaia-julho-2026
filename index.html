@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ushuaia · Julho 2026 — Roteiro de Viagem em Família</title>
+<meta name="description" content="Roteiro completo de 8 dias em Ushuaia, Argentina, em julho de 2026. Esqui no Cerro Castor, lagos Escondido e Fagnano, Glaciar Martial, trenó com huskies, Trem do Fim do Mundo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0a1628;
+    --ink-soft: #1e2d44;
+    --ink-mute: #4a5d76;
+    --paper: #fafaf7;
+    --paper-warm: #f4f0e8;
+    --paper-cool: #eef1f4;
+    --ice: #c5d5e0;
+    --ice-deep: #6b8aa3;
+    --ember: #c8511e;
+    --ember-soft: #e8a47a;
+    --gold: #b8893d;
+    --rule: #d4d0c5;
+    --rule-soft: #e8e4da;
+    --shadow-sm: 0 1px 3px rgba(10, 22, 40, 0.06);
+    --shadow: 0 1px 3px rgba(10, 22, 40, 0.06), 0 8px 24px rgba(10, 22, 40, 0.08);
+    --shadow-lg: 0 4px 12px rgba(10, 22, 40, 0.08), 0 24px 48px rgba(10, 22, 40, 0.12);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.65;
+    font-size: 15px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page { max-width: 960px; margin: 0 auto; padding: 0 32px; }
+  ::selection { background: var(--ember); color: white; }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 48px 32px;
+    background:
+      radial-gradient(ellipse at 15% 110%, rgba(200, 81, 30, 0.10), transparent 50%),
+      radial-gradient(ellipse at 85% -10%, rgba(107, 138, 163, 0.20), transparent 50%),
+      linear-gradient(180deg, var(--paper) 0%, var(--paper-warm) 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(var(--ice) 1px, transparent 1px),
+      linear-gradient(90deg, var(--ice) 1px, transparent 1px);
+    background-size: 80px 80px;
+    opacity: 0.06;
+    pointer-events: none;
+  }
+  .hero-inner {
+    max-width: 960px; margin: 0 auto; width: 100%;
+    display: flex; flex-direction: column;
+    flex: 1; justify-content: space-between;
+    position: relative; z-index: 1;
+  }
+  .hero-top {
+    display: flex; justify-content: space-between; align-items: flex-start;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  .hero-top span:last-child { text-align: right; }
+  .hero-center {
+    flex: 1;
+    display: flex; flex-direction: column; justify-content: center;
+    margin: 80px 0;
+  }
+  .eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase;
+    color: var(--ember);
+    margin-bottom: 32px;
+    display: flex; align-items: center; gap: 16px;
+  }
+  .eyebrow::before { content: ''; width: 48px; height: 1px; background: var(--ember); }
+  h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(56px, 11vw, 132px);
+    font-weight: 400;
+    line-height: 0.92;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    margin-bottom: 32px;
+  }
+  h1 em {
+    font-style: italic; color: var(--ember); font-weight: 300;
+    display: block;
+  }
+  .hero-sub {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(18px, 2vw, 24px);
+    font-weight: 300; font-style: italic;
+    color: var(--ink-soft);
+    max-width: 580px;
+    line-height: 1.4;
+  }
+  .hero-bottom {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    padding-top: 32px;
+    border-top: 1px solid var(--rule);
+  }
+  .hero-stat-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--ink-mute);
+    margin-bottom: 6px;
+  }
+  .hero-stat-value {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px; font-weight: 500;
+    color: var(--ink);
+  }
+
+  /* SECTION COMMON */
+  section { padding: 96px 0; border-bottom: 1px solid var(--rule-soft); }
+  section:last-of-type { border-bottom: none; }
+  .section-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; letter-spacing: 0.3em;
+    color: var(--ember);
+    margin-bottom: 16px;
+  }
+  h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(36px, 5vw, 56px);
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    margin-bottom: 12px;
+  }
+  h2 em { font-style: italic; color: var(--ember); }
+  .section-sub {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px; font-weight: 300; font-style: italic;
+    color: var(--ink-mute);
+    margin-bottom: 56px;
+    max-width: 600px;
+    line-height: 1.4;
+  }
+  h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px; font-weight: 500;
+    line-height: 1.15;
+    margin-bottom: 12px;
+    color: var(--ink);
+  }
+  h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px; font-weight: 600;
+    letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--ember);
+    margin-bottom: 10px;
+  }
+  p { margin-bottom: 14px; color: var(--ink-soft); }
+  a { color: var(--ember); text-decoration: none; border-bottom: 1px solid currentColor; transition: color 0.2s; }
+  a:hover { color: var(--ink); }
+
+  /* OVERVIEW */
+  .overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: start;
+  }
+  .overview-text p { font-size: 16px; line-height: 1.75; }
+  .overview-meta {
+    background: var(--paper-warm);
+    border-left: 2px solid var(--ember);
+    padding: 32px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    line-height: 2;
+  }
+  .overview-meta strong {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ember);
+    margin-top: 16px;
+    margin-bottom: 4px;
+  }
+  .overview-meta strong:first-child { margin-top: 0; }
+
+  /* ACCOMMODATION CARD */
+  .accommodation {
+    background: white;
+    border: 1px solid var(--rule-soft);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    margin-bottom: 32px;
+  }
+  .accommodation-visual {
+    height: 320px;
+    background:
+      radial-gradient(ellipse at 30% 20%, rgba(255, 255, 255, 0.15), transparent 60%),
+      linear-gradient(135deg, #1a3a5c 0%, #0a1628 60%, #1e2d44 100%);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    padding: 40px;
+  }
+  /* Stars background */
+  .accommodation-visual::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      radial-gradient(1.5px 1.5px at 8% 15%, white, transparent),
+      radial-gradient(1px 1px at 22% 28%, rgba(255,255,255,0.7), transparent),
+      radial-gradient(2px 2px at 38% 12%, white, transparent),
+      radial-gradient(1px 1px at 50% 22%, rgba(255,255,255,0.5), transparent),
+      radial-gradient(1.5px 1.5px at 62% 8%, white, transparent),
+      radial-gradient(1px 1px at 78% 18%, rgba(255,255,255,0.7), transparent),
+      radial-gradient(2px 2px at 90% 30%, white, transparent),
+      radial-gradient(1px 1px at 15% 42%, rgba(255,255,255,0.6), transparent),
+      radial-gradient(1.5px 1.5px at 70% 38%, white, transparent),
+      radial-gradient(1px 1px at 92% 50%, rgba(255,255,255,0.5), transparent);
+    opacity: 0.85;
+  }
+  /* Mountains */
+  .accommodation-visual::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: -5%; right: -5%;
+    height: 65%;
+    background:
+      linear-gradient(180deg, transparent 0%, rgba(10, 22, 40, 0.4) 100%),
+      conic-gradient(from 200deg at 20% 100%, transparent 0deg, #2a4566 35deg, transparent 70deg),
+      conic-gradient(from 195deg at 50% 100%, transparent 0deg, #1f3552 30deg, transparent 60deg),
+      conic-gradient(from 200deg at 75% 100%, transparent 0deg, #2a4566 40deg, transparent 80deg);
+    clip-path: polygon(0 35%, 12% 8%, 22% 28%, 35% 12%, 48% 38%, 58% 18%, 72% 32%, 85% 5%, 100% 25%, 100% 100%, 0 100%);
+  }
+  .accommodation-visual-text {
+    position: relative;
+    z-index: 2;
+    color: white;
+  }
+  .accommodation-visual-eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--ember-soft);
+    margin-bottom: 12px;
+  }
+  .accommodation-visual h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 8px;
+    line-height: 1;
+  }
+  .accommodation-visual-tagline {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.85);
+  }
+  .accommodation-body {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+  }
+  .accommodation-info p { color: var(--ink-soft); }
+  .accommodation-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .accommodation-stat {
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--rule-soft);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .accommodation-stat:last-child { border-bottom: none; padding-bottom: 0; }
+  .accommodation-stat-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+  }
+  .accommodation-stat-value {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--ink);
+  }
+  .accommodation-stat-value.gold { color: var(--gold); }
+  .accommodation-stat-value.ember { color: var(--ember); }
+  .booking-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 28px;
+    background: var(--ink);
+    color: white !important;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    border: none;
+    margin-top: 16px;
+    transition: all 0.3s;
+  }
+  .booking-cta:hover {
+    background: var(--ember);
+    transform: translateY(-2px);
+  }
+  .booking-cta::after {
+    content: '→';
+    font-size: 18px;
+  }
+
+  /* DAY CARDS */
+  .day {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 48px;
+    padding: 40px 0;
+    border-top: 1px solid var(--rule-soft);
+    align-items: start;
+  }
+  .day:first-of-type { border-top: 1px solid var(--rule); }
+  .day-meta {
+    position: sticky; top: 32px;
+  }
+  .day-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 84px;
+    font-weight: 300;
+    line-height: 1;
+    color: var(--ember);
+    letter-spacing: -0.02em;
+    margin-bottom: 4px;
+  }
+  .day-date {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin-bottom: 12px;
+  }
+  .day-tag {
+    display: inline-block;
+    padding: 4px 12px;
+    background: var(--paper-warm);
+    border: 1px solid var(--rule);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  .day-content h3 {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+  .day-content > p:first-of-type {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-style: italic;
+    color: var(--ink-mute);
+    margin-bottom: 24px;
+  }
+  .timeline {
+    margin-top: 24px;
+    border-left: 1px solid var(--rule);
+    padding-left: 24px;
+  }
+  .timeline-item {
+    position: relative;
+    padding-bottom: 20px;
+  }
+  .timeline-item:last-child { padding-bottom: 0; }
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -28px; top: 8px;
+    width: 7px; height: 7px;
+    background: var(--ember);
+    border-radius: 50%;
+  }
+  .timeline-time {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: var(--ember);
+    font-weight: 500;
+  }
+  .timeline-text {
+    font-size: 14px;
+    color: var(--ink-soft);
+    margin-top: 2px;
+  }
+  .timeline-text strong {
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  /* RESTAURANTS */
+  .restaurants-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .restaurant {
+    border: 1px solid var(--rule-soft);
+    padding: 28px;
+    background: white;
+    transition: all 0.3s;
+  }
+  .restaurant:hover {
+    border-color: var(--ember);
+    box-shadow: var(--shadow);
+  }
+  .restaurant-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    color: var(--ink);
+  }
+  .restaurant-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ember);
+    margin-bottom: 12px;
+  }
+  .restaurant-desc {
+    font-size: 14px;
+    color: var(--ink-soft);
+    margin-bottom: 16px;
+    line-height: 1.6;
+  }
+  .restaurant-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    border-top: 1px solid var(--rule-soft);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--ink-mute);
+  }
+  .restaurant-day {
+    color: var(--gold);
+    font-weight: 500;
+  }
+
+  /* BUDGET TABLE */
+  .budget {
+    background: white;
+    border: 1px solid var(--rule-soft);
+    box-shadow: var(--shadow);
+  }
+  .budget-row {
+    display: grid;
+    grid-template-columns: 60px 1fr auto;
+    gap: 24px;
+    padding: 20px 32px;
+    border-bottom: 1px solid var(--rule-soft);
+    align-items: center;
+  }
+  .budget-row:last-child { border-bottom: none; }
+  .budget-icon {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--ember);
+    letter-spacing: 0.1em;
+  }
+  .budget-name { color: var(--ink); font-size: 15px; }
+  .budget-name span { display: block; font-size: 12px; color: var(--ink-mute); margin-top: 2px; font-family: 'JetBrains Mono', monospace; letter-spacing: 0.05em; }
+  .budget-value {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--ink);
+  }
+  .budget-total {
+    background: var(--ink);
+    color: white;
+  }
+  .budget-total .budget-icon { color: var(--ember-soft); }
+  .budget-total .budget-name { color: white; font-weight: 600; }
+  .budget-total .budget-value { color: var(--ember-soft); font-size: 32px; }
+
+  /* COMPOSITION CHART */
+  .composition {
+    margin-top: 48px;
+    padding: 32px;
+    background: var(--paper-warm);
+    border-left: 2px solid var(--ember);
+  }
+  .composition-bar {
+    display: flex;
+    height: 40px;
+    margin: 24px 0;
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+  }
+  .composition-segment {
+    height: 100%;
+    transition: all 0.3s;
+    cursor: default;
+  }
+  .composition-segment:hover { transform: scaleY(1.1); }
+  .composition-legend {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .composition-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
+  .composition-dot {
+    width: 12px; height: 12px;
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+  .composition-pct {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500;
+    color: var(--ink);
+  }
+
+  /* RESERVATIONS TIMELINE */
+  .reservations {
+    border-left: 2px solid var(--ember);
+    padding-left: 32px;
+    margin-left: 16px;
+  }
+  .reservation-block {
+    padding-bottom: 32px;
+    position: relative;
+  }
+  .reservation-block:last-child { padding-bottom: 0; }
+  .reservation-block::before {
+    content: '';
+    position: absolute;
+    left: -39px; top: 4px;
+    width: 14px; height: 14px;
+    background: white;
+    border: 2px solid var(--ember);
+    border-radius: 50%;
+  }
+  .reservation-when {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ember);
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  .reservation-list {
+    list-style: none;
+    padding: 0;
+  }
+  .reservation-list li {
+    padding: 10px 0;
+    border-bottom: 1px dotted var(--rule);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--ink-soft);
+    font-size: 14px;
+  }
+  .reservation-list li:last-child { border-bottom: none; }
+  .reservation-list li strong {
+    color: var(--ink);
+    font-weight: 500;
+  }
+  .reservation-list li span {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--gold);
+    margin-left: 16px;
+  }
+
+  /* ATTENTION POINTS */
+  .attention-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+  .attention-card {
+    padding: 28px;
+    background: white;
+    border-top: 3px solid var(--ember);
+    box-shadow: var(--shadow-sm);
+  }
+  .attention-card h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--ink);
+    text-transform: none;
+    letter-spacing: 0;
+    margin-bottom: 12px;
+  }
+  .attention-card p, .attention-card li {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+  }
+  .attention-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  .attention-card li {
+    padding-left: 16px;
+    position: relative;
+    margin-bottom: 8px;
+  }
+  .attention-card li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--ember);
+  }
+
+  /* GALLERY LINKS */
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 24px;
+  }
+  .gallery-link {
+    border: 1px solid var(--rule-soft);
+    padding: 20px;
+    background: white;
+    text-decoration: none;
+    border-bottom: 1px solid var(--rule-soft);
+    transition: all 0.3s;
+    color: var(--ink) !important;
+  }
+  .gallery-link:hover {
+    border-color: var(--ember);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+    color: var(--ink) !important;
+  }
+  .gallery-link-icon {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--ember);
+    margin-bottom: 8px;
+    letter-spacing: 0.1em;
+  }
+  .gallery-link-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+  .gallery-link-url {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--ink-mute);
+    word-break: break-all;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 64px 32px;
+    background: var(--ink);
+    color: var(--ice);
+    text-align: center;
+  }
+  footer p {
+    color: var(--ice);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 300;
+    margin-bottom: 16px;
+  }
+  footer .footer-mono {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--ice-deep);
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .page { padding: 0 20px; }
+    section { padding: 64px 0; }
+    .hero { padding: 32px 20px; }
+    .hero-bottom { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .overview-grid { grid-template-columns: 1fr; gap: 32px; }
+    .accommodation-body { grid-template-columns: 1fr; gap: 32px; padding: 32px; }
+    .accommodation-visual { padding: 28px; }
+    .accommodation-visual h3 { font-size: 36px; }
+    .day { grid-template-columns: 1fr; gap: 16px; }
+    .day-meta { position: static; }
+    .day-num { font-size: 56px; }
+    .restaurants-grid { grid-template-columns: 1fr; }
+    .attention-grid { grid-template-columns: 1fr; }
+    .gallery-grid { grid-template-columns: 1fr; }
+    .composition-legend { grid-template-columns: 1fr; }
+  }
+  @media print {
+    .booking-cta, .gallery-link { break-inside: avoid; }
+    section { break-inside: avoid; padding: 32px 0; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-top">
+      <span>Tierra del Fuego · 54° 48′ S</span>
+      <span>Roteiro de Viagem · Família · 8 dias</span>
+    </div>
+    <div class="hero-center">
+      <div class="eyebrow">Patagônia austral · Inverno 2026</div>
+      <h1>Ushuaia<em>fim do mundo</em></h1>
+      <p class="hero-sub">
+        Oito dias entre o Canal de Beagle, os bosques de lengas
+        nevados e a estação de esqui mais austral do planeta.
+        Um roteiro construído para uma família de três.
+      </p>
+    </div>
+    <div class="hero-bottom">
+      <div>
+        <div class="hero-stat-label">Período</div>
+        <div class="hero-stat-value">13 — 20 jul</div>
+      </div>
+      <div>
+        <div class="hero-stat-label">Família</div>
+        <div class="hero-stat-value">2 adultos · 1 criança</div>
+      </div>
+      <div>
+        <div class="hero-stat-label">Companhia aérea</div>
+        <div class="hero-stat-value">LATAM direto</div>
+      </div>
+      <div>
+        <div class="hero-stat-label">Investimento</div>
+        <div class="hero-stat-value">~ R$ 36,7 mil</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- VISÃO GERAL -->
+<section id="visao-geral">
+  <div class="page">
+    <div class="section-num">I · Visão geral</div>
+    <h2>Por que <em>Ushuaia</em></h2>
+    <p class="section-sub">Onde a Cordilheira dos Andes desce ao mar e a neve dura mais que em qualquer outro lugar do continente.</p>
+
+    <div class="overview-grid">
+      <div class="overview-text">
+        <p>Ushuaia em julho oferece a combinação rara que outros destinos sul-americanos não conseguem reunir: pistas de esqui de qualidade, paisagens lacustres austrais, infraestrutura urbana real e variedade de experiências para crianças e adultos com perfis diferentes.</p>
+        <p>O roteiro que segue equilibra dois dias de esqui no Cerro Castor, navegação visual pelo Canal de Beagle a partir da cidade, passeio pelos lagos Escondido e Fagnano, ascensão ao Glaciar Martial, trenó com huskies, Trem do Fim do Mundo, Parque Nacional Tierra del Fuego e cultura no Museu Marítimo do Presídio.</p>
+        <p>Cada dia foi distribuído com atenção ao ritmo de uma criança de seis anos: caminhadas curtas, intervalos de descanso e atividades alternadas entre ar livre e ambientes aquecidos.</p>
+      </div>
+      <aside class="overview-meta">
+        <strong>Voos</strong>
+        Ida 13/jul · 8h15 GRU → 14h USH<br>
+        Volta 20/jul · 15h USH → 20h30 GRU<br>
+        Direto pela LATAM
+        <strong>Esqui</strong>
+        Cerro Castor · dias 3 e 5<br>
+        Pistas intermediárias e iniciantes
+        <strong>Transporte interno</strong>
+        Sem aluguel de carro<br>
+        Transfers e vans turísticas
+        <strong>Restrições alimentares</strong>
+        Sem glúten, açúcar, ovo,<br>trigo, soja e laticínios<br>
+        (pai e filho)
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- HOSPEDAGEM -->
+<section id="hospedagem">
+  <div class="page">
+    <div class="section-num">II · Hospedagem</div>
+    <h2>Casa <em>Cima</em></h2>
+    <p class="section-sub">Aparthotel central com cozinha equipada e vista das montanhas.</p>
+
+    <div class="accommodation">
+      <div class="accommodation-visual">
+        <div class="accommodation-visual-text">
+          <div class="accommodation-visual-eyebrow">Aparthotel · Centro de Ushuaia</div>
+          <h3>Casa Cima</h3>
+          <p class="accommodation-visual-tagline">Donde el mundo comienza</p>
+        </div>
+      </div>
+      <div class="accommodation-body">
+        <div class="accommodation-info">
+          <h4>Sobre a estadia</h4>
+          <p>Aparthotel três estrelas no centro histórico de Ushuaia, na Calle Gobernador Deloqui. A uma quadra da rua principal e a curta caminhada do porto, museus e supermercados.</p>
+          <p>Apartamento moderno com cozinha completa, ideal para família com restrições alimentares — preparar refeições simples sem precisar comer fora todos os dias é o que viabiliza o orçamento e a tranquilidade da viagem.</p>
+          <p>Avaliação consistentemente alta entre hóspedes brasileiros pela limpeza, atendimento e localização.</p>
+          <a href="https://www.booking.com/hotel/ar/casa-cima.pt-br.html?checkin=2026-07-13&checkout=2026-07-20" class="booking-cta" target="_blank" rel="noopener">Ver fotos e reservar no Booking</a>
+        </div>
+        <div class="accommodation-stats">
+          <div class="accommodation-stat">
+            <span class="accommodation-stat-label">Check-in</span>
+            <span class="accommodation-stat-value">Seg, 13 jul</span>
+          </div>
+          <div class="accommodation-stat">
+            <span class="accommodation-stat-label">Check-out</span>
+            <span class="accommodation-stat-value">Seg, 20 jul</span>
+          </div>
+          <div class="accommodation-stat">
+            <span class="accommodation-stat-label">Noites</span>
+            <span class="accommodation-stat-value">7</span>
+          </div>
+          <div class="accommodation-stat">
+            <span class="accommodation-stat-label">Avaliação Booking</span>
+            <span class="accommodation-stat-value gold">9,1 / 10</span>
+          </div>
+          <div class="accommodation-stat">
+            <span class="accommodation-stat-label">Reviews</span>
+            <span class="accommodation-stat-value">264</span>
+          </div>
+          <div class="accommodation-stat">
+            <span class="accommodation-stat-label">Endereço</span>
+            <span class="accommodation-stat-value" style="font-size: 14px; font-family: 'Inter', sans-serif;">Gob. Deloqui 1514</span>
+          </div>
+          <div class="accommodation-stat">
+            <span class="accommodation-stat-label">Total da estadia</span>
+            <span class="accommodation-stat-value ember">R$ 3.677</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROTEIRO -->
+<section id="roteiro">
+  <div class="page">
+    <div class="section-num">III · Roteiro dia a dia</div>
+    <h2>Oito <em>dias</em></h2>
+    <p class="section-sub">Equilíbrio entre dias de esqui, paisagem e cultura — com folgas estratégicas para a criança.</p>
+
+    <!-- DIA 1 -->
+    <div class="day">
+      <div class="day-meta">
+        <div class="day-num">01</div>
+        <div class="day-date">Dom · 13 jul</div>
+        <span class="day-tag">Chegada</span>
+      </div>
+      <div class="day-content">
+        <h3>Aterrissagem no fim do mundo</h3>
+        <p>Voo direto e jantar de boas-vindas com cordeiro patagônico no Bodegón Fueguino.</p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-time">05h00 — 14h00</div>
+            <div class="timeline-text">Saída de casa para GRU. Voo LATAM direto <strong>GRU 8h15 → USH 14h</strong>.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">14h30</div>
+            <div class="timeline-text">Transfer aeroporto → Casa Cima. <strong>R$ 120 a 180.</strong></div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">15h — 16h</div>
+            <div class="timeline-text">Check-in, banho, organização da bagagem e primeiro respiro do ar austral.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">16h — 17h30</div>
+            <div class="timeline-text">Compras de mercado no <strong>La Anónima</strong> (frutas, frios sin TACC, refeições prontas, água, lanches, pão sin TACC).</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">19h30</div>
+            <div class="timeline-text">Jantar de boas-vindas no <strong>Bodegón Fueguino</strong> — cordeiro patagônico, ambiente rústico, restrições já comunicadas. <strong>R$ 500 a 700.</strong></div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">22h</div>
+            <div class="timeline-text">Cama cedo. Amanhã o relógio biológico ainda está em São Paulo.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIA 2 -->
+    <div class="day">
+      <div class="day-meta">
+        <div class="day-num">02</div>
+        <div class="day-date">Seg · 14 jul</div>
+        <span class="day-tag">Trenó · Glaciar</span>
+      </div>
+      <div class="day-content">
+        <h3>Huskies pela manhã, glaciar à tarde</h3>
+        <p>Trenó curto para mãe e filho. Culipatín no Glaciar Martial.</p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-time">09h</div>
+            <div class="timeline-text">Transfer ao centro invernal de Tierra Mayor. <strong>R$ 200 a 300.</strong></div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">10h — 11h30</div>
+            <div class="timeline-text"><strong>Trenó curto com huskies</strong> — mãe e filho de 6 anos juntos no trenó, modalidade demonstrativa. Operadora a confirmar (Siberianos del Fuego, Husky Park ou Haruwen). Pai fotografa em terra. <strong>R$ 500 a 700</strong> (apenas mãe + filho).</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">12h</div>
+            <div class="timeline-text">Volta a Ushuaia, almoço rápido em casa.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">14h</div>
+            <div class="timeline-text">Subida ao <strong>Glaciar Martial</strong> pela telecadeira (15 min do centro). <strong>R$ 280 família.</strong></div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">14h30 — 16h30</div>
+            <div class="timeline-text">Filho brinca com <strong>culipatín</strong> alugado no platô (R$ 50 a 100). Pais caminham pelo entorno. Sem trilha pesada.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">17h</div>
+            <div class="timeline-text">Descida e volta ao apartamento, descanso.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">20h</div>
+            <div class="timeline-text">Jantar no <strong>Kalma Resto</strong> — fusão patagônica + mediterrânea + peruana, mais flexível com restrições. <strong>R$ 600 a 800.</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIA 3 -->
+    <div class="day">
+      <div class="day-meta">
+        <div class="day-num">03</div>
+        <div class="day-date">Ter · 15 jul</div>
+        <span class="day-tag">Esqui · Dia 1</span>
+      </div>
+      <div class="day-content">
+        <h3>Cerro Castor, primeiro dia</h3>
+        <p>Reconhecimento das pistas e introdução à neve real após escola indoor em São Paulo.</p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-time">08h</div>
+            <div class="timeline-text">Transfer cidade → Cerro Castor. <strong>R$ 250 família ida/volta.</strong></div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">09h</div>
+            <div class="timeline-text">Retirada de equipamento completo (snowboard pra um adulto, esqui pros outros dois) + locker (R$ 75) + skipass diário (R$ 1.300 família) + aluguel (R$ 713 família).</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">09h30 — 12h30</div>
+            <div class="timeline-text">Esqui matutino com intervalos curtos para o filho. Pistas de iniciante: <strong>Eros, Caprichoso, Apolo.</strong></div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">13h</div>
+            <div class="timeline-text">Almoço na cantina da estação ou marmita.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">14h — 15h</div>
+            <div class="timeline-text">Mais 1 a 1h30 de esqui leve.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">15h30</div>
+            <div class="timeline-text">Transfer de volta a Ushuaia. Devolução do equipamento <em>fica</em> com a família para o dia 5.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">17h — 19h</div>
+            <div class="timeline-text">Descanso, banho quente.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">20h</div>
+            <div class="timeline-text">Jantar refeição pronta no apartamento (frango assado pré-pronto + salada + fruta).</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIA 4 -->
+    <div class="day">
+      <div class="day-meta">
+        <div class="day-num">04</div>
+        <div class="day-date">Qua · 16 jul</div>
+        <span class="day-tag">Lagos · Trem</span>
+      </div>
+      <div class="day-content">
+        <h3>Lagos austrais e trem histórico</h3>
+        <p>Descanso muscular do esqui com paisagem dos lagos Escondido e Fagnano e o icônico Trem do Fim do Mundo.</p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-time">08h30</div>
+            <div class="timeline-text">Transfer privado para <strong>Lago Escondido + Lago Fagnano</strong>. <strong>R$ 800 família.</strong> Mirantes curtos, sem trilhas. Sentido por dentro do veículo.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">12h</div>
+            <div class="timeline-text">Almoço na <strong>Hostería Petrel</strong>, sobre o Fagnano. Vista postal do lago. Restrições avisadas com transfer 48h antes.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">14h30</div>
+            <div class="timeline-text">Volta a Ushuaia.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">15h</div>
+            <div class="timeline-text"><strong>Trem do Fim do Mundo</strong> — trajeto curto, sentado, sem caminhada. Locomotiva a vapor pelo trajeto histórico dos prisioneiros. <strong>R$ 620 família.</strong></div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">17h30</div>
+            <div class="timeline-text">Volta ao apartamento.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">20h</div>
+            <div class="timeline-text">Jantar no <strong>Maria Lola Resto</strong> — vista panorâmica da cidade, merluza negra signature, massas caseiras, carta de vinhos extensa. <strong>R$ 600 a 800.</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIA 5 -->
+    <div class="day">
+      <div class="day-meta">
+        <div class="day-num">05</div>
+        <div class="day-date">Qui · 17 jul</div>
+        <span class="day-tag">Esqui · Dia 2</span>
+      </div>
+      <div class="day-content">
+        <h3>Cerro Castor, segundo dia</h3>
+        <p>Já adaptados, descida em pistas mais variadas. Devolução de equipamento ao final.</p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-time">08h — 15h30</div>
+            <div class="timeline-text">Mesma rotina do dia 3: transfer, skipass diário (R$ 1.300), aluguel mantido (R$ 713), locker (R$ 75). <strong>Dia mais experiente — você pode tentar pistas intermediárias enquanto esposa e filho continuam nas verdes.</strong></div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">15h30</div>
+            <div class="timeline-text"><strong>Devolução de todo o equipamento</strong> ao final do dia.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">17h — 19h</div>
+            <div class="timeline-text">Banho quente, descanso.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">20h</div>
+            <div class="timeline-text">Jantar refeição pronta no apartamento.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIA 6 -->
+    <div class="day">
+      <div class="day-meta">
+        <div class="day-num">06</div>
+        <div class="day-date">Sex · 18 jul</div>
+        <span class="day-tag">Parque · Cultura</span>
+      </div>
+      <div class="day-content">
+        <h3>Tierra del Fuego e o ex-presídio</h3>
+        <p>Manhã no parque nacional (versão sem trilhas), tarde no museu mais imperdível da cidade, noite no Kaupé como despedida.</p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-time">09h30</div>
+            <div class="timeline-text">Transfer ao <strong>Parque Nacional Tierra del Fuego</strong>. Entrada R$ 200 + transfer R$ 200. <strong>R$ 400 família.</strong></div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">10h — 12h</div>
+            <div class="timeline-text"><strong>Bahía Lapataia</strong> (trilha plana de 20 min até o cartaz "fim da Ruta 3") + Mirador Lago Roca (parada de carro). Sem trekking pesado.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">12h30</div>
+            <div class="timeline-text">Volta a Ushuaia. Almoço em casa.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">14h30 — 17h</div>
+            <div class="timeline-text"><strong>Museu Marítimo e do Presídio de Ushuaia</strong> — cadeia mais ao sul do mundo. Várias seções, vai devagar pela criança. <strong>R$ 300 família.</strong></div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">17h30</div>
+            <div class="timeline-text">Volta ao apartamento, banho, vestir traje mais ajeitado.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">20h</div>
+            <div class="timeline-text">Jantar de despedida no <strong>Kaupé</strong> — alta gastronomia patagônica, vista da baía, prato adaptado pré-confirmado 48h antes. <strong>R$ 800 a 1.000.</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIA 7 -->
+    <div class="day">
+      <div class="day-meta">
+        <div class="day-num">07</div>
+        <div class="day-date">Sáb · 19 jul</div>
+        <span class="day-tag">Folga · Centolla</span>
+      </div>
+      <div class="day-content">
+        <h3>Dia leve, gastronomia local</h3>
+        <p>Manhã de café histórico, almoço de centolla autêntica, tarde de descanso.</p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-time">10h</div>
+            <div class="timeline-text">Café da manhã no <strong>Almacén Ramos Generales</strong> — café histórico em armazém de 1900, atmosfera encantadora.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">11h30</div>
+            <div class="timeline-text">Compras de lembrancinhas: <strong>chocolates Laguna Negra</strong>, lã artesanal, livros, vinhos patagônicos.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">13h</div>
+            <div class="timeline-text">Almoço no <strong>El Viejo Marino</strong> — centolla autêntica, ambiente de taberna de pescadores, sem reserva (chegar 15 min antes da abertura). <strong>R$ 400 a 600.</strong></div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">14h30 — 17h</div>
+            <div class="timeline-text">Descanso no apartamento, organização das malas.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">17h30</div>
+            <div class="timeline-text">Caminhada curta na orla para ver o pôr do sol (em julho, ~17h15).</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">20h</div>
+            <div class="timeline-text">Jantar leve em casa, refeição pronta. Véspera de voo.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIA 8 -->
+    <div class="day">
+      <div class="day-meta">
+        <div class="day-num">08</div>
+        <div class="day-date">Seg · 20 jul</div>
+        <span class="day-tag">Volta</span>
+      </div>
+      <div class="day-content">
+        <h3>São Paulo</h3>
+        <p>Última manhã na cidade, voo direto pra casa.</p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-time">09h</div>
+            <div class="timeline-text">Check-out, café da manhã calmo no apartamento.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">09h30 — 12h</div>
+            <div class="timeline-text">Última volta pelo centro, compras finais.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">12h</div>
+            <div class="timeline-text">Almoço leve.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">13h</div>
+            <div class="timeline-text">Transfer aeroporto. <strong>R$ 120 a 180.</strong></div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">15h</div>
+            <div class="timeline-text">Voo LATAM direto <strong>USH 15h → GRU 20h30</strong>.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESTAURANTES -->
+<section id="restaurantes">
+  <div class="page">
+    <div class="section-num">IV · Restaurantes</div>
+    <h2>Mesa <em>fueguina</em></h2>
+    <p class="section-sub">Selecionados pela qualidade real, não pelo preço. Da centolla autêntica à alta gastronomia com vista do canal.</p>
+
+    <div class="restaurants-grid">
+      <div class="restaurant">
+        <div class="restaurant-name">Bodegón Fueguino</div>
+        <div class="restaurant-tag">Cordeiro patagônico</div>
+        <p class="restaurant-desc">Santuário do cordeiro fueguino. Ambiente rústico de madeira, pratos generosos, carta de vinhos boa, preço médio. Avenida San Martín.</p>
+        <div class="restaurant-meta">
+          <span>Reserva: 30 dias antes</span>
+          <span class="restaurant-day">Dia 1 · Dom</span>
+        </div>
+      </div>
+
+      <div class="restaurant">
+        <div class="restaurant-name">Kalma Resto</div>
+        <div class="restaurant-tag">Fusão · Vista do Canal</div>
+        <p class="restaurant-desc">Chef Jorge Monopoli. Fusão patagônica + mediterrânea + peruana, o mais flexível com restrições alimentares. Vista do Canal de Beagle.</p>
+        <div class="restaurant-meta">
+          <span>Reserva: 30 dias antes</span>
+          <span class="restaurant-day">Dia 2 · Seg</span>
+        </div>
+      </div>
+
+      <div class="restaurant">
+        <div class="restaurant-name">Maria Lola Resto</div>
+        <div class="restaurant-tag">Merluza negra · Vista panorâmica</div>
+        <p class="restaurant-desc">Vista panorâmica de toda a cidade. Merluza negra é o prato signature, massas caseiras (ravioli, linguine), carta de vinhos extensa. Adorada por gastrônomos.</p>
+        <div class="restaurant-meta">
+          <span>Reserva: 30 dias antes</span>
+          <span class="restaurant-day">Dia 4 · Qua</span>
+        </div>
+      </div>
+
+      <div class="restaurant">
+        <div class="restaurant-name">Kaupé</div>
+        <div class="restaurant-tag">Alta gastronomia · Despedida</div>
+        <p class="restaurant-desc">Referência técnica em frutos do mar, comandado pela família Vivian há décadas. Melhor vista da baía. Reserva via plataforma Meitre, no mínimo 10 dias antes.</p>
+        <div class="restaurant-meta">
+          <span>Reserva: 45 dias antes</span>
+          <span class="restaurant-day">Dia 6 · Sex</span>
+        </div>
+      </div>
+
+      <div class="restaurant">
+        <div class="restaurant-name">El Viejo Marino</div>
+        <div class="restaurant-tag">Centolla autêntica · Sem reserva</div>
+        <p class="restaurant-desc">Referência absoluta em centolla, ambiente de taberna de pescadores, atendimento rápido, preço justo. Sem reserva — chegar 15 min antes das 18h30.</p>
+        <div class="restaurant-meta">
+          <span>Sem reserva</span>
+          <span class="restaurant-day">Dia 7 · Sáb almoço</span>
+        </div>
+      </div>
+
+      <div class="restaurant">
+        <div class="restaurant-name">Almacén Ramos Generales</div>
+        <div class="restaurant-tag">Café histórico · 1900</div>
+        <p class="restaurant-desc">Café histórico em armazém de 1900. Produtos artesanais, alfajores, doce de leite, charcutaria. Atmosfera encantadora para café da manhã ou meio da tarde.</p>
+        <div class="restaurant-meta">
+          <span>Sem reserva</span>
+          <span class="restaurant-day">Dia 7 · Sáb manhã</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ORÇAMENTO -->
+<section id="orcamento">
+  <div class="page">
+    <div class="section-num">V · Orçamento</div>
+    <h2>Custo <em>total</em></h2>
+    <p class="section-sub">Família de três · 8 dias · valores em reais com câmbio aproximado de julho 2026.</p>
+
+    <div class="budget">
+      <div class="budget-row">
+        <div class="budget-icon">01</div>
+        <div class="budget-name">Voos LATAM direto<span>GRU ↔ USH ida e volta · 3 pessoas</span></div>
+        <div class="budget-value">R$ 17.726</div>
+      </div>
+      <div class="budget-row">
+        <div class="budget-icon">02</div>
+        <div class="budget-name">Hospedagem Casa Cima<span>7 noites · centro de Ushuaia</span></div>
+        <div class="budget-value">R$ 3.677</div>
+      </div>
+      <div class="budget-row">
+        <div class="budget-icon">03</div>
+        <div class="budget-name">Esqui completo<span>2 dias · skipass + transfer + aluguel + locker</span></div>
+        <div class="budget-value">R$ 4.177</div>
+      </div>
+      <div class="budget-row">
+        <div class="budget-icon">04</div>
+        <div class="budget-name">Atividades<span>trenó, lagos, glaciar, parque, museu, trem</span></div>
+        <div class="budget-value">R$ 2.830</div>
+      </div>
+      <div class="budget-row">
+        <div class="budget-icon">05</div>
+        <div class="budget-name">Transfers + seguro Assist Card<span>aeroporto + cidade</span></div>
+        <div class="budget-value">R$ 1.700</div>
+      </div>
+      <div class="budget-row">
+        <div class="budget-icon">06</div>
+        <div class="budget-name">Alimentação<span>mercado + 5 jantares + 2 almoços fora</span></div>
+        <div class="budget-value">R$ 6.575</div>
+      </div>
+      <div class="budget-row budget-total">
+        <div class="budget-icon">∑</div>
+        <div class="budget-name">Total estimado</div>
+        <div class="budget-value">R$ 36.685</div>
+      </div>
+    </div>
+
+    <div class="composition">
+      <h4>Composição do orçamento</h4>
+      <div class="composition-bar">
+        <div class="composition-segment" style="width: 48.3%; background: #0a1628;" title="Voos"></div>
+        <div class="composition-segment" style="width: 17.9%; background: #c8511e;" title="Alimentação"></div>
+        <div class="composition-segment" style="width: 11.4%; background: #6b8aa3;" title="Esqui"></div>
+        <div class="composition-segment" style="width: 10%; background: #b8893d;" title="Hospedagem"></div>
+        <div class="composition-segment" style="width: 7.7%; background: #e8a47a;" title="Atividades"></div>
+        <div class="composition-segment" style="width: 4.7%; background: #4a5d76;" title="Transfers + Seguro"></div>
+      </div>
+      <div class="composition-legend">
+        <div class="composition-item"><span class="composition-dot" style="background: #0a1628;"></span>Voos<span class="composition-pct" style="margin-left: auto;">48%</span></div>
+        <div class="composition-item"><span class="composition-dot" style="background: #c8511e;"></span>Alimentação<span class="composition-pct" style="margin-left: auto;">18%</span></div>
+        <div class="composition-item"><span class="composition-dot" style="background: #6b8aa3;"></span>Esqui<span class="composition-pct" style="margin-left: auto;">11%</span></div>
+        <div class="composition-item"><span class="composition-dot" style="background: #b8893d;"></span>Hospedagem<span class="composition-pct" style="margin-left: auto;">10%</span></div>
+        <div class="composition-item"><span class="composition-dot" style="background: #e8a47a;"></span>Atividades<span class="composition-pct" style="margin-left: auto;">8%</span></div>
+        <div class="composition-item"><span class="composition-dot" style="background: #4a5d76;"></span>Transfers + Seguro<span class="composition-pct" style="margin-left: auto;">5%</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESERVAS -->
+<section id="reservas">
+  <div class="page">
+    <div class="section-num">VI · Cronograma de reservas</div>
+    <h2>Em <em>ordem</em></h2>
+    <p class="section-sub">Algumas reservas críticas precisam ser feitas com 45 dias de antecedência. Outras só na chegada.</p>
+
+    <div class="reservations">
+      <div class="reservation-block">
+        <div class="reservation-when">Agora · imediato</div>
+        <ul class="reservation-list">
+          <li><strong>Voos LATAM</strong> — fechado <span>R$ 17.726</span></li>
+          <li><strong>Casa Cima · Booking</strong> <span>R$ 3.677</span></li>
+        </ul>
+      </div>
+      <div class="reservation-block">
+        <div class="reservation-when">45 dias antes · final de maio</div>
+        <ul class="reservation-list">
+          <li><strong>Restaurante Kaupé</strong> · jantar de despedida (Meitre) <span>10 dias mín.</span></li>
+        </ul>
+      </div>
+      <div class="reservation-block">
+        <div class="reservation-when">30 dias antes · meados de junho</div>
+        <ul class="reservation-list">
+          <li><strong>Trenó com huskies</strong> · WhatsApp Siberianos del Fuego, Husky Park ou Haruwen <span>confirme idade 6</span></li>
+          <li><strong>Bodegón Fueguino</strong> · jantar dia 1 <span>WhatsApp</span></li>
+          <li><strong>Kalma Resto</strong> · jantar dia 2 <span>WhatsApp</span></li>
+          <li><strong>Maria Lola Resto</strong> · jantar dia 4 <span>WhatsApp</span></li>
+        </ul>
+      </div>
+      <div class="reservation-block">
+        <div class="reservation-when">15 dias antes · final de junho</div>
+        <ul class="reservation-list">
+          <li><strong>Trem do Fim do Mundo</strong> · trensubastral.com.ar <span>online</span></li>
+          <li><strong>Transfer privado pros Lagos</strong> Escondido + Fagnano <span>operadora local</span></li>
+        </ul>
+      </div>
+      <div class="reservation-block">
+        <div class="reservation-when">7 dias antes</div>
+        <ul class="reservation-list">
+          <li><strong>Confirmação de restaurantes</strong> com restrições alimentares por escrito (e-mail/WhatsApp) <span>48h antes</span></li>
+          <li><strong>Seguro Assist Card</strong> <span>antes de embarcar</span></li>
+        </ul>
+      </div>
+      <div class="reservation-block">
+        <div class="reservation-when">No dia · na chegada</div>
+        <ul class="reservation-list">
+          <li><strong>Skipass Cerro Castor</strong> · diário, não pacote</li>
+          <li><strong>Aluguel de equipamento</strong> de esqui na estação</li>
+          <li><strong>Telecadeira Glaciar Martial</strong> + culipatín</li>
+          <li><strong>Entrada PN Tierra del Fuego</strong> + Museu Presídio</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ATENÇÃO -->
+<section id="atencao">
+  <div class="page">
+    <div class="section-num">VII · Pontos de atenção</div>
+    <h2>O que <em>importa</em></h2>
+    <p class="section-sub">Detalhes que fazem diferença entre uma viagem boa e uma viagem incrível.</p>
+
+    <div class="attention-grid">
+      <div class="attention-card">
+        <h4>Restrições alimentares</h4>
+        <ul>
+          <li>Avise sempre com 48h de antecedência por escrito (e-mail ou WhatsApp)</li>
+          <li>Mantenha lanches sin TACC e frutas como backup</li>
+          <li>La Anónima é o supermercado principal, perto do centro</li>
+          <li>Não experimente alimento desconhecido sem perguntar ingredientes</li>
+        </ul>
+      </div>
+
+      <div class="attention-card">
+        <h4>Esqui no Cerro Castor</h4>
+        <ul>
+          <li>Skipass diário, não pacote rígido — estação pode fechar por vento ou nevasca</li>
+          <li>Locker compartilhado para a família é suficiente</li>
+          <li>Filho cansa rápido — intervale com chocolate quente e descanso</li>
+          <li>Shuttle oficial sai da Calle San Martín às 9h</li>
+        </ul>
+      </div>
+
+      <div class="attention-card">
+        <h4>Trenó com criança de 6 anos</h4>
+        <ul>
+          <li>Não compre por agência genérica (Civitatis, Viator, GetYourGuide) — barram pela idade</li>
+          <li>Contate operadores diretos por WhatsApp</li>
+          <li>Confirme idade aceita antes de pagar</li>
+          <li>Trenó curto, sem velocidade, criança no colo do adulto</li>
+        </ul>
+      </div>
+
+      <div class="attention-card">
+        <h4>Clima austral em julho</h4>
+        <ul>
+          <li>Temperatura: -5°C a +5°C, vento forte, neve frequente</li>
+          <li>Roupa térmica completa obrigatória</li>
+          <li>Sol nasce ~9h45 e se põe ~17h15</li>
+          <li>Programe atividades ao ar livre antes das 16h</li>
+        </ul>
+      </div>
+
+      <div class="attention-card">
+        <h4>Câmbio argentino</h4>
+        <ul>
+          <li>Leve dólar em espécie pra emergências</li>
+          <li>Use cartão de crédito brasileiro — taxa MEP automática</li>
+          <li>Evite trocar pesos no aeroporto (pior cotação)</li>
+          <li>Valores no roteiro são estimativas — câmbio é volátil</li>
+        </ul>
+      </div>
+
+      <div class="attention-card">
+        <h4>Documentação</h4>
+        <ul>
+          <li>Passaporte válido (preferencial) ou RG dentro da validade</li>
+          <li>Para criança: certidão de nascimento ou autorização notarial se viajar com só um dos pais</li>
+          <li>Comprovante de seguro viagem (Argentina pode pedir na imigração)</li>
+          <li>Comprovante de hospedagem e voo de volta</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIAS -->
+<section id="galerias">
+  <div class="page">
+    <div class="section-num">VIII · Galerias e referências</div>
+    <h2>Para <em>ver</em> antes de ir</h2>
+    <p class="section-sub">Páginas oficiais com fotos, vídeos e informação atualizada de cada atração.</p>
+
+    <div class="gallery-grid">
+      <a href="https://www.cerrocastor.com" target="_blank" rel="noopener" class="gallery-link">
+        <div class="gallery-link-icon">↗ ESQUI</div>
+        <div class="gallery-link-name">Cerro Castor</div>
+        <div class="gallery-link-url">cerrocastor.com</div>
+      </a>
+      <a href="https://www.tdfaustral.com" target="_blank" rel="noopener" class="gallery-link">
+        <div class="gallery-link-icon">↗ TREM</div>
+        <div class="gallery-link-name">Trem do Fim do Mundo</div>
+        <div class="gallery-link-url">tdfaustral.com</div>
+      </a>
+      <a href="https://www.glaciarmartial.com.ar" target="_blank" rel="noopener" class="gallery-link">
+        <div class="gallery-link-icon">↗ GLACIAR</div>
+        <div class="gallery-link-name">Aerosilla Martial</div>
+        <div class="gallery-link-url">glaciarmartial.com.ar</div>
+      </a>
+      <a href="https://www.argentina.gob.ar/parquesnacionales/tierradelfuego" target="_blank" rel="noopener" class="gallery-link">
+        <div class="gallery-link-icon">↗ PARQUE</div>
+        <div class="gallery-link-name">PN Tierra del Fuego</div>
+        <div class="gallery-link-url">argentina.gob.ar</div>
+      </a>
+      <a href="https://www.museomaritimo.com" target="_blank" rel="noopener" class="gallery-link">
+        <div class="gallery-link-icon">↗ MUSEU</div>
+        <div class="gallery-link-name">Museu Marítimo do Presídio</div>
+        <div class="gallery-link-url">museomaritimo.com</div>
+      </a>
+      <a href="https://turismo.tierradelfuego.gob.ar" target="_blank" rel="noopener" class="gallery-link">
+        <div class="gallery-link-icon">↗ OFICIAL</div>
+        <div class="gallery-link-name">Turismo Tierra del Fuego</div>
+        <div class="gallery-link-url">turismo.tierradelfuego.gob.ar</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>"Cuando uno llega al fin del mundo,<br>se da cuenta de que el mundo no termina."</p>
+  <div class="footer-mono">Ushuaia · Tierra del Fuego · Julho 2026</div>
+</footer>
+
+</body>
+</html>
