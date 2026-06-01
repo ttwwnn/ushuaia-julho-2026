@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ushuaia · Julho 2026 — Roteiro de Viagem em Família</title>
-<meta name="description" content="Roteiro completo de 8 dias em Ushuaia, Argentina, em julho de 2026. Esqui no Cerro Castor, lagos Escondido e Fagnano, Glaciar Martial, trenó com huskies, Trem do Fim do Mundo.">
+<meta name="description" content="Roteiro completo de 8 dias em Ushuaia, Argentina, de 15 a 22 de julho de 2026. Esqui no Cerro Castor, lagos Escondido e Fagnano, Glaciar Martial, trenó com huskies, Trem do Fim do Mundo.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -743,6 +743,200 @@
     .booking-cta, .gallery-link { break-inside: avoid; }
     section { break-inside: avoid; padding: 32px 0; }
   }
+
+  /* LODGING DUO */
+  .lodging-duo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 48px;
+  }
+  .lodging-option {
+    background: white;
+    border: 1px solid var(--rule-soft);
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .lodging-badge {
+    background: var(--ember);
+    color: white;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  .lodging-visual {
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    padding: 24px;
+  }
+  .lodging-visual-a {
+    background:
+      radial-gradient(ellipse at 30% 20%, rgba(255,255,255,0.12), transparent 60%),
+      linear-gradient(135deg, #1a3a5c 0%, #0a1628 65%, #1e2d44 100%);
+  }
+  .lodging-visual-b {
+    background:
+      radial-gradient(ellipse at 70% 25%, rgba(232, 164, 122, 0.18), transparent 55%),
+      linear-gradient(135deg, #2a3d52 0%, #14202e 60%, #3a2a1e 100%);
+  }
+  .lodging-visual::before {
+    content: '';
+    position: absolute; inset: 0;
+    background-image:
+      radial-gradient(1.5px 1.5px at 15% 25%, white, transparent),
+      radial-gradient(1px 1px at 40% 18%, rgba(255,255,255,0.6), transparent),
+      radial-gradient(1.5px 1.5px at 65% 30%, white, transparent),
+      radial-gradient(1px 1px at 85% 20%, rgba(255,255,255,0.7), transparent),
+      radial-gradient(2px 2px at 55% 12%, white, transparent);
+    opacity: 0.7;
+  }
+  .lodging-visual::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: -5%; right: -5%;
+    height: 55%;
+    background: linear-gradient(180deg, transparent, rgba(10,22,40,0.5));
+    clip-path: polygon(0 40%, 15% 12%, 30% 32%, 48% 8%, 62% 28%, 80% 5%, 100% 30%, 100% 100%, 0 100%);
+    background-color: rgba(42, 69, 102, 0.4);
+  }
+  .lodging-visual-text { position: relative; z-index: 2; color: white; }
+  .lodging-visual-text h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 34px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 4px;
+    line-height: 1;
+  }
+  .lodging-tagline {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    color: rgba(255,255,255,0.8);
+    margin: 0;
+  }
+  .lodging-content {
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .lodging-price-row {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  .lodging-price {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--ember);
+    line-height: 1;
+  }
+  .lodging-price-note {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+  }
+  .lodging-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+    flex: 1;
+  }
+  .lodging-features li {
+    padding: 8px 0 8px 22px;
+    position: relative;
+    font-size: 14px;
+    color: var(--ink-soft);
+    border-bottom: 1px dotted var(--rule);
+  }
+  .lodging-features li:last-child { border-bottom: none; }
+  .lodging-features li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--ember);
+  }
+  .lodging-features strong { color: var(--ink); font-weight: 600; }
+  .lodging-watch {
+    background: var(--paper-warm);
+    border-left: 2px solid var(--gold);
+    padding: 12px 16px;
+    font-size: 12.5px;
+    line-height: 1.5;
+    color: var(--ink-soft);
+    margin-bottom: 20px;
+  }
+  .lodging-watch strong { color: var(--gold); }
+  .lodging-content .booking-cta { margin-top: auto; justify-content: center; }
+
+  /* COMPARE TABLE */
+  .lodging-compare {
+    background: var(--paper-warm);
+    border-left: 2px solid var(--ember);
+    padding: 32px;
+  }
+  .compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 14px;
+  }
+  .compare-table th {
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink);
+    padding: 12px 16px;
+    border-bottom: 2px solid var(--rule);
+  }
+  .compare-table th:first-child { color: var(--ink-mute); }
+  .compare-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--rule-soft);
+    color: var(--ink-soft);
+  }
+  .compare-table td:first-child {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--ink-mute);
+    letter-spacing: 0.03em;
+  }
+  .compare-table td.win {
+    color: var(--ink);
+    font-weight: 600;
+    background: rgba(200, 81, 30, 0.06);
+  }
+  .lodging-verdict {
+    font-size: 14.5px;
+    line-height: 1.7;
+    color: var(--ink-soft);
+    margin: 16px 0 0;
+  }
+  .lodging-verdict strong { color: var(--ink); }
+
+  @media (max-width: 768px) {
+    .lodging-duo { grid-template-columns: 1fr; }
+    .compare-table { font-size: 12.5px; }
+    .compare-table th, .compare-table td { padding: 10px 8px; }
+  }
 </style>
 </head>
 <body>
@@ -766,7 +960,7 @@
     <div class="hero-bottom">
       <div>
         <div class="hero-stat-label">Período</div>
-        <div class="hero-stat-value">13 — 20 jul</div>
+        <div class="hero-stat-value">15 — 22 jul</div>
       </div>
       <div>
         <div class="hero-stat-label">Família</div>
@@ -778,7 +972,7 @@
       </div>
       <div>
         <div class="hero-stat-label">Investimento</div>
-        <div class="hero-stat-value">~ R$ 36,7 mil</div>
+        <div class="hero-stat-value">~ R$ 29 mil</div>
       </div>
     </div>
   </div>
@@ -799,8 +993,8 @@
       </div>
       <aside class="overview-meta">
         <strong>Voos</strong>
-        Ida 13/jul · 8h15 GRU → 14h USH<br>
-        Volta 20/jul · 15h USH → 20h30 GRU<br>
+        Ida 15/jul · 8h20 GRU → 14h USH<br>
+        Volta 22/jul · 15h USH → 20h25 GRU<br>
         Direto pela LATAM
         <strong>Esqui</strong>
         Cerro Castor · dias 3 e 5<br>
@@ -820,56 +1014,92 @@
 <section id="hospedagem">
   <div class="page">
     <div class="section-num">II · Hospedagem</div>
-    <h2>Casa <em>Cima</em></h2>
-    <p class="section-sub">Aparthotel central com cozinha equipada e vista das montanhas.</p>
+    <h2>Duas <em>opções</em></h2>
+    <p class="section-sub">Ambas no centro, com quarto separado para a criança e disponibilidade confirmada nas datas. A decisão final entre as duas fica a seu critério.</p>
 
-    <div class="accommodation">
-      <div class="accommodation-visual">
-        <div class="accommodation-visual-text">
-          <div class="accommodation-visual-eyebrow">Aparthotel · Centro de Ushuaia</div>
-          <h3>Casa Cima</h3>
-          <p class="accommodation-visual-tagline">Donde el mundo comienza</p>
+    <div class="lodging-duo">
+      <!-- OPÇÃO A -->
+      <div class="lodging-option">
+        <div class="lodging-badge">Opção A · Vista do canal</div>
+        <div class="lodging-visual lodging-visual-a">
+          <div class="lodging-visual-text">
+            <h3>Lo de Gaston</h3>
+            <p class="lodging-tagline">Deloqui 1419 · moderno e central</p>
+          </div>
+        </div>
+        <div class="lodging-content">
+          <div class="lodging-price-row">
+            <span class="lodging-price">R$ 3.912</span>
+            <span class="lodging-price-note">7 noites</span>
+          </div>
+          <ul class="lodging-features">
+            <li><strong>9,2</strong> no Booking · 65 reviews</li>
+            <li>Vista do <strong>Canal de Beagle</strong> e montanha</li>
+            <li>Quarto separado + sofá-cama na sala</li>
+            <li>1 min da rua principal San Martín</li>
+            <li>2 quadras do supermercado La Anónima</li>
+            <li>Prédio moderno, elevador, aquecimento</li>
+          </ul>
+          <div class="lodging-watch">
+            <strong>Atenção:</strong> lavanderia fora da unidade (fichas). Reservar tarifa que diga "1 dormitorio".
+          </div>
+          <a href="https://www.booking.com/hotel/ar/modern-and-central-apartment.html?checkin=2026-07-15&checkout=2026-07-22&group_adults=2&group_children=1&age=6" class="booking-cta" target="_blank" rel="noopener">Ver fotos e reservar</a>
         </div>
       </div>
-      <div class="accommodation-body">
-        <div class="accommodation-info">
-          <h4>Sobre a estadia</h4>
-          <p>Aparthotel três estrelas no centro histórico de Ushuaia, na Calle Gobernador Deloqui. A uma quadra da rua principal e a curta caminhada do porto, museus e supermercados.</p>
-          <p>Apartamento moderno com cozinha completa, ideal para família com restrições alimentares — preparar refeições simples sem precisar comer fora todos os dias é o que viabiliza o orçamento e a tranquilidade da viagem.</p>
-          <p>Avaliação consistentemente alta entre hóspedes brasileiros pela limpeza, atendimento e localização.</p>
-          <a href="https://www.booking.com/hotel/ar/casa-cima.pt-br.html?checkin=2026-07-13&checkout=2026-07-20" class="booking-cta" target="_blank" rel="noopener">Ver fotos e reservar no Booking</a>
+
+      <!-- OPÇÃO B -->
+      <div class="lodging-option">
+        <div class="lodging-badge">Opção B · Mais novo</div>
+        <div class="lodging-visual lodging-visual-b">
+          <div class="lodging-visual-text">
+            <h3>Gente del Sur</h3>
+            <p class="lodging-tagline">Av. San Martín 848 · reformado 2025</p>
+          </div>
         </div>
-        <div class="accommodation-stats">
-          <div class="accommodation-stat">
-            <span class="accommodation-stat-label">Check-in</span>
-            <span class="accommodation-stat-value">Seg, 13 jul</span>
+        <div class="lodging-content">
+          <div class="lodging-price-row">
+            <span class="lodging-price">R$ 4.854</span>
+            <span class="lodging-price-note">7 noites</span>
           </div>
-          <div class="accommodation-stat">
-            <span class="accommodation-stat-label">Check-out</span>
-            <span class="accommodation-stat-value">Seg, 20 jul</span>
+          <ul class="lodging-features">
+            <li><strong>9,4</strong> no Booking · 74 reviews</li>
+            <li>Vista variável: mar, montanha ou cidade</li>
+            <li>Quarto separado (1 dormitório + living)</li>
+            <li>Reformado e construído em <strong>2025</strong></li>
+            <li>Camas pillowtop, Smart TV com Netflix, minibar</li>
+            <li>Na própria Avenida San Martín (rua principal)</li>
+          </ul>
+          <div class="lodging-watch">
+            <strong>Atenção:</strong> R$ 942 mais caro que a opção A. Vista do canal não é garantida em toda unidade.
           </div>
-          <div class="accommodation-stat">
-            <span class="accommodation-stat-label">Noites</span>
-            <span class="accommodation-stat-value">7</span>
-          </div>
-          <div class="accommodation-stat">
-            <span class="accommodation-stat-label">Avaliação Booking</span>
-            <span class="accommodation-stat-value gold">9,1 / 10</span>
-          </div>
-          <div class="accommodation-stat">
-            <span class="accommodation-stat-label">Reviews</span>
-            <span class="accommodation-stat-value">264</span>
-          </div>
-          <div class="accommodation-stat">
-            <span class="accommodation-stat-label">Endereço</span>
-            <span class="accommodation-stat-value" style="font-size: 14px; font-family: 'Inter', sans-serif;">Gob. Deloqui 1514</span>
-          </div>
-          <div class="accommodation-stat">
-            <span class="accommodation-stat-label">Total da estadia</span>
-            <span class="accommodation-stat-value ember">R$ 3.677</span>
-          </div>
+          <a href="https://www.booking.com/hotel/ar/gente-del-sur-avenida.html?checkin=2026-07-15&checkout=2026-07-22&group_adults=2&group_children=1&age=6" class="booking-cta" target="_blank" rel="noopener">Ver fotos e reservar</a>
         </div>
       </div>
+    </div>
+
+    <!-- COMPARATIVO -->
+    <div class="lodging-compare">
+      <h4>Comparação direta</h4>
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Critério</th>
+            <th>Lo de Gaston</th>
+            <th>Gente del Sur</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Preço · 7 noites</td><td class="win">R$ 3.912</td><td>R$ 4.854</td></tr>
+          <tr><td>Nota Booking</td><td>9,2</td><td class="win">9,4</td></tr>
+          <tr><td>Reviews</td><td>65</td><td class="win">74</td></tr>
+          <tr><td>Vista do Canal de Beagle</td><td class="win">Confirmada</td><td>Variável</td></tr>
+          <tr><td>Estilo / acabamento</td><td>Moderno</td><td class="win">Novo 2025, luxo</td></tr>
+          <tr><td>Quarto separado</td><td class="win">Sim</td><td class="win">Sim</td></tr>
+          <tr><td>Localização</td><td class="win">1 min da principal</td><td class="win">Na principal</td></tr>
+          <tr><td>Extras de conforto</td><td>Básico</td><td class="win">Pillowtop, Netflix, minibar</td></tr>
+        </tbody>
+      </table>
+      <p class="lodging-verdict"><strong>Resumo:</strong> a <strong>opção A (Lo de Gaston)</strong> ganha em preço e vista de canal garantida. A <strong>opção B (Gente del Sur)</strong> ganha em acabamento, conforto e por ser reformada em 2025. Diferença de R$ 942 nas 7 noites. Se a vista do canal pesa mais, vá de A; se o conforto e o "novo" pesam mais, vá de B.</p>
     </div>
   </div>
 </section>
@@ -885,7 +1115,7 @@
     <div class="day">
       <div class="day-meta">
         <div class="day-num">01</div>
-        <div class="day-date">Dom · 13 jul</div>
+        <div class="day-date">Qua · 15 jul</div>
         <span class="day-tag">Chegada</span>
       </div>
       <div class="day-content">
@@ -894,11 +1124,11 @@
         <div class="timeline">
           <div class="timeline-item">
             <div class="timeline-time">05h00 — 14h00</div>
-            <div class="timeline-text">Saída de casa para GRU. Voo LATAM direto <strong>GRU 8h15 → USH 14h</strong>.</div>
+            <div class="timeline-text">Saída de casa para GRU. Voo LATAM direto <strong>GRU 8h20 → USH 14h</strong>.</div>
           </div>
           <div class="timeline-item">
             <div class="timeline-time">14h30</div>
-            <div class="timeline-text">Transfer aeroporto → Casa Cima. <strong>R$ 120 a 180.</strong></div>
+            <div class="timeline-text">Transfer aeroporto → apartamento (centro). <strong>R$ 120 a 180.</strong></div>
           </div>
           <div class="timeline-item">
             <div class="timeline-time">15h — 16h</div>
@@ -924,7 +1154,7 @@
     <div class="day">
       <div class="day-meta">
         <div class="day-num">02</div>
-        <div class="day-date">Seg · 14 jul</div>
+        <div class="day-date">Qui · 16 jul</div>
         <span class="day-tag">Trenó · Glaciar</span>
       </div>
       <div class="day-content">
@@ -967,7 +1197,7 @@
     <div class="day">
       <div class="day-meta">
         <div class="day-num">03</div>
-        <div class="day-date">Ter · 15 jul</div>
+        <div class="day-date">Sex · 17 jul</div>
         <span class="day-tag">Esqui · Dia 1</span>
       </div>
       <div class="day-content">
@@ -1014,7 +1244,7 @@
     <div class="day">
       <div class="day-meta">
         <div class="day-num">04</div>
-        <div class="day-date">Qua · 16 jul</div>
+        <div class="day-date">Sáb · 18 jul</div>
         <span class="day-tag">Lagos · Trem</span>
       </div>
       <div class="day-content">
@@ -1053,7 +1283,7 @@
     <div class="day">
       <div class="day-meta">
         <div class="day-num">05</div>
-        <div class="day-date">Qui · 17 jul</div>
+        <div class="day-date">Dom · 19 jul</div>
         <span class="day-tag">Esqui · Dia 2</span>
       </div>
       <div class="day-content">
@@ -1084,7 +1314,7 @@
     <div class="day">
       <div class="day-meta">
         <div class="day-num">06</div>
-        <div class="day-date">Sex · 18 jul</div>
+        <div class="day-date">Seg · 20 jul</div>
         <span class="day-tag">Parque · Cultura</span>
       </div>
       <div class="day-content">
@@ -1123,7 +1353,7 @@
     <div class="day">
       <div class="day-meta">
         <div class="day-num">07</div>
-        <div class="day-date">Sáb · 19 jul</div>
+        <div class="day-date">Ter · 21 jul</div>
         <span class="day-tag">Folga · Centolla</span>
       </div>
       <div class="day-content">
@@ -1132,7 +1362,7 @@
         <div class="timeline">
           <div class="timeline-item">
             <div class="timeline-time">10h</div>
-            <div class="timeline-text">Café da manhã no <strong>Almacén Ramos Generales</strong> — café histórico em armazém de 1900, atmosfera encantadora.</div>
+            <div class="timeline-text">Café da manhã no <strong>Almacén Ramos Generales</strong> (verificar abertura na terça-feira). Alternativa: La Catarata ou padaria local.</div>
           </div>
           <div class="timeline-item">
             <div class="timeline-time">11h30</div>
@@ -1162,7 +1392,7 @@
     <div class="day">
       <div class="day-meta">
         <div class="day-num">08</div>
-        <div class="day-date">Seg · 20 jul</div>
+        <div class="day-date">Qua · 22 jul</div>
         <span class="day-tag">Volta</span>
       </div>
       <div class="day-content">
@@ -1187,7 +1417,7 @@
           </div>
           <div class="timeline-item">
             <div class="timeline-time">15h</div>
-            <div class="timeline-text">Voo LATAM direto <strong>USH 15h → GRU 20h30</strong>.</div>
+            <div class="timeline-text">Voo LATAM direto <strong>USH 15h → GRU 20h25</strong>.</div>
           </div>
         </div>
       </div>
@@ -1209,7 +1439,7 @@
         <p class="restaurant-desc">Santuário do cordeiro fueguino. Ambiente rústico de madeira, pratos generosos, carta de vinhos boa, preço médio. Avenida San Martín.</p>
         <div class="restaurant-meta">
           <span>Reserva: 30 dias antes</span>
-          <span class="restaurant-day">Dia 1 · Dom</span>
+          <span class="restaurant-day">Dia 1 · Qua</span>
         </div>
       </div>
 
@@ -1219,7 +1449,7 @@
         <p class="restaurant-desc">Chef Jorge Monopoli. Fusão patagônica + mediterrânea + peruana, o mais flexível com restrições alimentares. Vista do Canal de Beagle.</p>
         <div class="restaurant-meta">
           <span>Reserva: 30 dias antes</span>
-          <span class="restaurant-day">Dia 2 · Seg</span>
+          <span class="restaurant-day">Dia 2 · Qui</span>
         </div>
       </div>
 
@@ -1229,7 +1459,7 @@
         <p class="restaurant-desc">Vista panorâmica de toda a cidade. Merluza negra é o prato signature, massas caseiras (ravioli, linguine), carta de vinhos extensa. Adorada por gastrônomos.</p>
         <div class="restaurant-meta">
           <span>Reserva: 30 dias antes</span>
-          <span class="restaurant-day">Dia 4 · Qua</span>
+          <span class="restaurant-day">Dia 4 · Sáb</span>
         </div>
       </div>
 
@@ -1239,7 +1469,7 @@
         <p class="restaurant-desc">Referência técnica em frutos do mar, comandado pela família Vivian há décadas. Melhor vista da baía. Reserva via plataforma Meitre, no mínimo 10 dias antes.</p>
         <div class="restaurant-meta">
           <span>Reserva: 45 dias antes</span>
-          <span class="restaurant-day">Dia 6 · Sex</span>
+          <span class="restaurant-day">Dia 6 · Seg</span>
         </div>
       </div>
 
@@ -1249,7 +1479,7 @@
         <p class="restaurant-desc">Referência absoluta em centolla, ambiente de taberna de pescadores, atendimento rápido, preço justo. Sem reserva — chegar 15 min antes das 18h30.</p>
         <div class="restaurant-meta">
           <span>Sem reserva</span>
-          <span class="restaurant-day">Dia 7 · Sáb almoço</span>
+          <span class="restaurant-day">Dia 7 · Ter almoço</span>
         </div>
       </div>
 
@@ -1259,7 +1489,7 @@
         <p class="restaurant-desc">Café histórico em armazém de 1900. Produtos artesanais, alfajores, doce de leite, charcutaria. Atmosfera encantadora para café da manhã ou meio da tarde.</p>
         <div class="restaurant-meta">
           <span>Sem reserva</span>
-          <span class="restaurant-day">Dia 7 · Sáb manhã</span>
+          <span class="restaurant-day">Dia 7 · Ter manhã</span>
         </div>
       </div>
     </div>
@@ -1277,12 +1507,12 @@
       <div class="budget-row">
         <div class="budget-icon">01</div>
         <div class="budget-name">Voos LATAM direto<span>GRU ↔ USH ida e volta · 3 pessoas</span></div>
-        <div class="budget-value">R$ 17.726</div>
+        <div class="budget-value">R$ 9.378,85</div>
       </div>
       <div class="budget-row">
         <div class="budget-icon">02</div>
-        <div class="budget-name">Hospedagem Casa Cima<span>7 noites · centro de Ushuaia</span></div>
-        <div class="budget-value">R$ 3.677</div>
+        <div class="budget-name">Hospedagem (opção A ou B)<span>7 noites · Lo de Gaston ou Gente del Sur</span></div>
+        <div class="budget-value">R$ 3.912 – 4.854</div>
       </div>
       <div class="budget-row">
         <div class="budget-icon">03</div>
@@ -1307,27 +1537,27 @@
       <div class="budget-row budget-total">
         <div class="budget-icon">∑</div>
         <div class="budget-name">Total estimado</div>
-        <div class="budget-value">R$ 36.685</div>
+        <div class="budget-value">R$ 28.573 – 29.515</div>
       </div>
     </div>
 
     <div class="composition">
       <h4>Composição do orçamento</h4>
       <div class="composition-bar">
-        <div class="composition-segment" style="width: 48.3%; background: #0a1628;" title="Voos"></div>
-        <div class="composition-segment" style="width: 17.9%; background: #c8511e;" title="Alimentação"></div>
-        <div class="composition-segment" style="width: 11.4%; background: #6b8aa3;" title="Esqui"></div>
-        <div class="composition-segment" style="width: 10%; background: #b8893d;" title="Hospedagem"></div>
-        <div class="composition-segment" style="width: 7.7%; background: #e8a47a;" title="Atividades"></div>
-        <div class="composition-segment" style="width: 4.7%; background: #4a5d76;" title="Transfers + Seguro"></div>
+        <div class="composition-segment" style="width: 32.3%; background: #0a1628;" title="Voos"></div>
+        <div class="composition-segment" style="width: 22.6%; background: #c8511e;" title="Alimentação"></div>
+        <div class="composition-segment" style="width: 15.1%; background: #b8893d;" title="Hospedagem"></div>
+        <div class="composition-segment" style="width: 14.4%; background: #6b8aa3;" title="Esqui"></div>
+        <div class="composition-segment" style="width: 9.7%; background: #e8a47a;" title="Atividades"></div>
+        <div class="composition-segment" style="width: 5.9%; background: #4a5d76;" title="Transfers + Seguro"></div>
       </div>
       <div class="composition-legend">
-        <div class="composition-item"><span class="composition-dot" style="background: #0a1628;"></span>Voos<span class="composition-pct" style="margin-left: auto;">48%</span></div>
-        <div class="composition-item"><span class="composition-dot" style="background: #c8511e;"></span>Alimentação<span class="composition-pct" style="margin-left: auto;">18%</span></div>
-        <div class="composition-item"><span class="composition-dot" style="background: #6b8aa3;"></span>Esqui<span class="composition-pct" style="margin-left: auto;">11%</span></div>
-        <div class="composition-item"><span class="composition-dot" style="background: #b8893d;"></span>Hospedagem<span class="composition-pct" style="margin-left: auto;">10%</span></div>
-        <div class="composition-item"><span class="composition-dot" style="background: #e8a47a;"></span>Atividades<span class="composition-pct" style="margin-left: auto;">8%</span></div>
-        <div class="composition-item"><span class="composition-dot" style="background: #4a5d76;"></span>Transfers + Seguro<span class="composition-pct" style="margin-left: auto;">5%</span></div>
+        <div class="composition-item"><span class="composition-dot" style="background: #0a1628;"></span>Voos<span class="composition-pct" style="margin-left: auto;">32%</span></div>
+        <div class="composition-item"><span class="composition-dot" style="background: #c8511e;"></span>Alimentação<span class="composition-pct" style="margin-left: auto;">23%</span></div>
+        <div class="composition-item"><span class="composition-dot" style="background: #b8893d;"></span>Hospedagem<span class="composition-pct" style="margin-left: auto;">15%</span></div>
+        <div class="composition-item"><span class="composition-dot" style="background: #6b8aa3;"></span>Esqui<span class="composition-pct" style="margin-left: auto;">14%</span></div>
+        <div class="composition-item"><span class="composition-dot" style="background: #e8a47a;"></span>Atividades<span class="composition-pct" style="margin-left: auto;">10%</span></div>
+        <div class="composition-item"><span class="composition-dot" style="background: #4a5d76;"></span>Transfers + Seguro<span class="composition-pct" style="margin-left: auto;">6%</span></div>
       </div>
     </div>
   </div>
@@ -1344,12 +1574,12 @@
       <div class="reservation-block">
         <div class="reservation-when">Agora · imediato</div>
         <ul class="reservation-list">
-          <li><strong>Voos LATAM</strong> — fechado <span>R$ 17.726</span></li>
-          <li><strong>Casa Cima · Booking</strong> <span>R$ 3.677</span></li>
+          <li><strong>Voos LATAM</strong> — fechado <span>R$ 9.378,85</span></li>
+          <li><strong>Hospedagem · Booking</strong> — escolher A ou B <span>R$ 3.912–4.854</span></li>
         </ul>
       </div>
       <div class="reservation-block">
-        <div class="reservation-when">45 dias antes · final de maio</div>
+        <div class="reservation-when">45 dias antes · início de junho</div>
         <ul class="reservation-list">
           <li><strong>Restaurante Kaupé</strong> · jantar de despedida (Meitre) <span>10 dias mín.</span></li>
         </ul>
