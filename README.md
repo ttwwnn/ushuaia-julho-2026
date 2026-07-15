@@ -1,1 +1,0 @@
-# ushuaia-julho-2026
