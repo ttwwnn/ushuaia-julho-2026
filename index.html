@@ -1131,6 +1131,27 @@
     font-size: 22px;
     color: white;
   }
+  .gastos-total-com-fixos td {
+    background: var(--ember);
+    color: white;
+    font-weight: 600;
+    padding: 14px 12px;
+    border: none;
+    font-size: 13px;
+  }
+  .gastos-total-com-fixos td:first-child {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.85);
+    text-align: right;
+  }
+  .gastos-total-com-fixos td:last-child {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    color: white;
+  }
 
   /* DIÁRIO RECORDATÓRIO */
   .diary {
@@ -1216,7 +1237,7 @@
       </div>
       <div>
         <div class="hero-stat-label">Investimento</div>
-        <div class="hero-stat-value">~ R$ 28,3 mil</div>
+        <div class="hero-stat-value">~ R$ 28,1 mil</div>
       </div>
     </div>
   </div>
@@ -1490,6 +1511,11 @@
             <div class="timeline-text">Jantar no <strong><a href="https://www.google.com/maps/search/?api=1&amp;query=-54.8076151%2C-68.3099163&amp;query_place_id=ChIJW7kY2CEjTLwRuveMjG933qQ" target="_blank" rel="noopener">Bodegón Fueguino</a></strong> — cordeiro patagônico, ambiente rústico de madeira. <strong>Pago: US$ 53,72 (R$ 284) na Nomad.</strong></div>
           </div>
         </div>
+
+        <div class="diary">
+          <div class="diary-label">Diário · dia 2</div>
+          <div class="diary-text">O <strong>trenó foi lindo</strong> e a Emilia adorou — foi o que "quebrou o gelo" da viagem. O Benjamim <strong>brincou na neve pela primeira vez</strong>: fez <strong>anjo na neve</strong> com a mãe e <strong>guerra de neve</strong> com o pai. À noite, nevou na cidade.</div>
+        </div>
       </div>
     </div>
 
@@ -1533,7 +1559,7 @@
 
         <div class="diary">
           <div class="diary-label">Diário · dia 3</div>
-          <div class="diary-text">O dia do esqui começou sem pressa: <strong>café da manhã em casa e sanduíches preparados</strong> para levar. Fomos de Uber às 11h e, já no Cerro Castor, compramos os ingressos, alugamos o equipamento e guardamos a mochila no locker. Por volta das <strong>13h30 estávamos subindo a montanha de teleférico</strong>. Descemos às 17h, comemos os sanduíches com água e batata chips, esperamos o Uber e voltamos para casa, chegando por volta das <strong>18h</strong>.</div>
+          <div class="diary-text">O dia do esqui começou sem pressa: <strong>café da manhã em casa e sanduíches preparados</strong> para levar. Fomos de Uber às 11h e, já no Cerro Castor, compramos os ingressos, alugamos o equipamento e guardamos a mochila no locker. Por volta das <strong>13h30 estávamos subindo a montanha de teleférico</strong>. O <strong>Benjamim esquiou de primeira</strong>, com muita facilidade, e <strong>se superou no button lift</strong>. Fizemos <strong>guerra de neve todos juntos</strong>. Descemos às 17h, comemos os sanduíches com água e batata chips, esperamos o Uber e voltamos para casa, chegando por volta das <strong>18h</strong>.</div>
         </div>
       </div>
     </div>
@@ -1583,38 +1609,34 @@
       </div>
       <div class="day-content">
         <h3>Lago congelado e a final</h3>
-        <p>Manhã tranquila em casa e, à tarde, um passeio pelo lago congelado, a placa de Ushuaia e o museu, antes da final da Copa do Mundo às 16h.</p>
+        <p>Manhã tranquila em casa e, à tarde, o lago congelado e a placa de Ushuaia. A final da Copa do Mundo assistida em casa, às 16h.</p>
 
         <div class="lodging-watch" style="margin-bottom: 24px;">
-          <strong>Final da Copa do Mundo · 16h · Argentina x Espanha.</strong> A Argentina garantiu vaga na final. A cidade inteira vai parar para assistir, e todo bar fica cheio. Reserve mesa no Krund com antecedência e chegue cedo para garantir lugar.
+          <strong>Final da Copa do Mundo · 16h · Argentina x Espanha.</strong> A Argentina chegou à final e a cidade inteira parou. O jogo foi assistido em casa, pela TV Pública, com risoto de camarão da Emilia.
         </div>
 
         <div class="timeline">
           <div class="timeline-item">
             <div class="timeline-time">Manhã</div>
-            <div class="timeline-text">Café da manhã em casa, sem pressa. A nevada do fim de semana prepara a neve para o esqui de amanhã.</div>
+            <div class="timeline-text">Café da manhã em casa, sem pressa.</div>
           </div>
           <div class="timeline-item">
             <div class="timeline-time">13h</div>
-            <div class="timeline-text">Saída para o <strong>lago congelado</strong>, a <strong>placa de Ushuaia</strong> (o cartão-postal do "fim do mundo") e o <strong><a href="https://www.google.com/maps/search/?api=1&amp;query=-54.8035636%2C-68.2978787&amp;query_place_id=ChIJIw3G2t0iTLwRtr9T_IJUHr4" target="_blank" rel="noopener">Museu Marítimo e do Presídio</a></strong> — nova tentativa, agora com a cidade normalizada.</div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">15h30</div>
-            <div class="timeline-text">Caminhada até o <strong><a href="https://www.google.com/maps/search/?api=1&amp;query=-54.804786500000006%2C-68.30284019999999&amp;query_place_id=ChIJxYshGCcjTLwRk06YHCdxiq4" target="_blank" rel="noopener">Krund Ushuaia</a></strong> (Gob. Deloqui 289, a poucos minutos a pé). Brewpub tranquilo, com área interna e coberta. Chegar cedo para garantir mesa.</div>
+            <div class="timeline-text">Saída para o <strong>lago congelado</strong> e a <strong>placa de Ushuaia</strong>, o cartão-postal do "fim do mundo". O <strong>Museu do Presídio estava fechado por causa do jogo</strong> — ficou pendente.</div>
           </div>
           <div class="timeline-item">
             <div class="timeline-time">16h</div>
-            <div class="timeline-text"><strong>Final da Copa do Mundo · Argentina x Espanha</strong>, no MetLife Stadium (Nova York). Petiscos e hambúrguer no Krund. <strong>R$ 300 a 500 família.</strong></div>
+            <div class="timeline-text"><strong>Final da Copa do Mundo · Argentina x Espanha</strong>, assistida em casa pela TV Pública, com clima tranquilo e a criança à vontade.</div>
           </div>
           <div class="timeline-item">
-            <div class="timeline-time">19h</div>
-            <div class="timeline-text">Volta tranquila à Casa Cima. Jantar leve, refeição do mercado.</div>
+            <div class="timeline-time">Noite</div>
+            <div class="timeline-text"><strong>Risoto de camarão</strong> preparado pela Emilia, com ingredientes do mercado.</div>
           </div>
         </div>
 
         <div class="diary">
           <div class="diary-label">Diário · dia 5</div>
-          <div class="diary-text">Café da manhã em casa e saída às 13h para o <strong>lago congelado</strong>, a <strong>placa de Ushuaia</strong> e o Museo. Às 16h, a <strong>final da Copa do Mundo</strong>.</div>
+          <div class="diary-text">Café da manhã em casa e saída às 13h. <strong>Jogamos pedra no lago congelado</strong> e tiramos <strong>fotos no letreiro "Ushuaia"</strong>, mas o museu estava fechado para o jogo. Às 16h, assistimos a <strong>final da Copa do Mundo</strong> em casa, e à noite a Emilia fez um <strong>risoto de camarão</strong>.</div>
         </div>
       </div>
     </div>
@@ -1885,13 +1907,13 @@
       </div>
       <div class="budget-row">
         <div class="budget-icon">05</div>
-        <div class="budget-name">Ubers + seguro<span>seguro R$ 473 + ubers R$ 501 reais + R$ 277 est.</span></div>
-        <div class="budget-value">R$ 1.251</div>
+        <div class="budget-name">Ubers + seguro<span>seguro R$ 473 + ubers R$ 559 reais + R$ 277 est.</span></div>
+        <div class="budget-value">R$ 1.309</div>
       </div>
       <div class="budget-row">
         <div class="budget-icon">06</div>
-        <div class="budget-name">Alimentação<span>R$ 3.311 real (com vinhos) + restante estimado</span></div>
-        <div class="budget-value">R$ 5.711</div>
+        <div class="budget-name">Alimentação<span>R$ 3.509 real (com vinhos) + restante estimado</span></div>
+        <div class="budget-value">R$ 5.509</div>
       </div>
       <div class="budget-row">
         <div class="budget-icon">07</div>
@@ -1901,19 +1923,19 @@
       <div class="budget-row budget-total">
         <div class="budget-icon">∑</div>
         <div class="budget-name">Total dinâmico</div>
-        <div class="budget-value">R$ 28.253</div>
+        <div class="budget-value">R$ 28.109</div>
       </div>
     </div>
 
     <div class="composition">
       <h4>Composição do orçamento</h4>
       <div class="composition-bar">
-        <div class="composition-segment" style="width: 33.2%; background: #0a1628;" title="Voos"></div>
-        <div class="composition-segment" style="width: 20.2%; background: #c8511e;" title="Alimentação"></div>
-        <div class="composition-segment" style="width: 19.1%; background: #6b8aa3;" title="Esqui"></div>
-        <div class="composition-segment" style="width: 16.5%; background: #b8893d;" title="Hospedagem"></div>
+        <div class="composition-segment" style="width: 33.4%; background: #0a1628;" title="Voos"></div>
+        <div class="composition-segment" style="width: 19.6%; background: #c8511e;" title="Alimentação"></div>
+        <div class="composition-segment" style="width: 19.2%; background: #6b8aa3;" title="Esqui"></div>
+        <div class="composition-segment" style="width: 16.6%; background: #b8893d;" title="Hospedagem"></div>
         <div class="composition-segment" style="width: 4.6%; background: #e8a47a;" title="Atividades"></div>
-        <div class="composition-segment" style="width: 4.4%; background: #4a5d76;" title="Ubers + Seguro"></div>
+        <div class="composition-segment" style="width: 4.7%; background: #4a5d76;" title="Ubers + Seguro"></div>
         <div class="composition-segment" style="width: 1.9%; background: #7a9b6b;" title="Compras"></div>
       </div>
       <div class="composition-legend">
@@ -1944,13 +1966,13 @@
       </div>
       <div class="nomad-card nomad-card-highlight">
         <div class="nomad-label">Saldo Nomad em dólar</div>
-        <div class="nomad-value">US$ 1.006,72</div>
-        <div class="nomad-sub">após US$ 991,83 gastos (dias 2 a 4)</div>
+        <div class="nomad-value">US$ 961,34</div>
+        <div class="nomad-sub">após US$ 1.037,21 gastos (dias 2 a 5)</div>
       </div>
       <div class="nomad-card">
-        <div class="nomad-label">Gasto total · dias 1-4</div>
-        <div class="nomad-value">R$ 10.160</div>
-        <div class="nomad-sub">R$ 4.911 no crédito + R$ 5.249 na Nomad</div>
+        <div class="nomad-label">Gasto total · dias 1-5</div>
+        <div class="nomad-value">R$ 10.417</div>
+        <div class="nomad-sub">R$ 4.928 no crédito + R$ 5.489 na Nomad</div>
       </div>
     </div>
 
@@ -1984,6 +2006,11 @@
           </tr>
         </thead>
         <tbody>
+          <tr class="gastos-daymark"><td colspan="5">Antes da viagem · voos e reservas</td></tr>
+          <tr><td>Jun</td><td>Voos LATAM direto (GRU ↔ USH, 3 pessoas)</td><td>R$ 9.378,85</td><td>Crédito</td><td>R$ 9.378,85</td></tr>
+          <tr><td>Jun</td><td>Seguro viagem Assist Card</td><td>R$ 472,77</td><td>Crédito</td><td>R$ 472,77</td></tr>
+          <tr class="gastos-subtotal"><td colspan="4">Total antes da viagem</td><td>R$ 9.851,62</td></tr>
+
           <tr class="gastos-daymark"><td colspan="5">Dia 1 · 15 jul</td></tr>
           <tr><td>15 jul</td><td>Pedágios até o estacionamento</td><td>R$ 16,26</td><td>Crédito</td><td>R$ 16,26</td></tr>
           <tr><td>15 jul</td><td>Uber em São Paulo</td><td>R$ 48,31</td><td>Crédito</td><td>R$ 48,31</td></tr>
@@ -2027,10 +2054,22 @@
           <tr><td>18 jul</td><td>Luva, canetinhas e caderno (Emilia e Benjamin)</td><td>R$ 60,96</td><td>Crédito</td><td>R$ 60,96</td></tr>
           <tr class="gastos-subtotal"><td colspan="4">Total do dia 4 · R$ 137 crédito + R$ 926 Nomad</td><td>R$ 1.063,37</td></tr>
 
-          <tr class="gastos-total-geral"><td colspan="4">TOTAL GASTO ATÉ AGORA · R$ 4.911 crédito + R$ 5.249 Nomad</td><td>R$ 10.159,97</td></tr>
+          <tr class="gastos-daymark"><td colspan="5">Dia 5 · 19 jul · Copa</td></tr>
+          <tr><td>19 jul</td><td>Uber lago congelado · ida</td><td>R$ 15,93 +IOF</td><td>Crédito</td><td>R$ 16,49</td></tr>
+          <tr><td>19 jul</td><td>Uber · volta</td><td>US$ 7,88</td><td>Nomad</td><td>R$ 41,70</td></tr>
+          <tr><td>19 jul</td><td>Ingredientes do risoto de camarão</td><td>US$ 37,50</td><td>Nomad</td><td>R$ 198,45</td></tr>
+          <tr class="gastos-subtotal"><td colspan="4">Total do dia 5 · R$ 16 crédito + R$ 240 Nomad</td><td>R$ 256,64</td></tr>
+
+          <tr class="gastos-daymark"><td colspan="5">Ainda a pagar (no check-out)</td></tr>
+          <tr><td>20-22</td><td>Hostería América (2 noites)</td><td>R$ 1.749,89</td><td>a definir</td><td>R$ 1.749,89</td></tr>
+          <tr><td>20 jul</td><td>Casa Cima · restante da diária</td><td colspan="2"><em>no check-out</em></td><td>~R$ 641</td></tr>
+          <tr class="gastos-subtotal"><td colspan="4">Total a pagar (estimado)</td><td>~R$ 2.391</td></tr>
+
+          <tr class="gastos-total-geral"><td colspan="4">TOTAL GASTO ATÉ AGORA · R$ 4.928 crédito + R$ 5.489 Nomad</td><td>R$ 10.416,62</td></tr>
+          <tr class="gastos-total-com-fixos"><td colspan="4">COM VOOS, SEGURO E HOSPEDAGEM A PAGAR</td><td>R$ 22.658,96</td></tr>
         </tbody>
       </table>
-      <p class="gastos-note">Gastos em ARS (crédito) convertidos pela cotação via cartão: AR$ 1 ≈ R$ 0,00361, com IOF e spread. Gastos em USD (Nomad) pela taxa travada: US$ 1 = R$ 5,292, sem IOF adicional. O mercado do dia 16 (vinhos + comidas) ficou junto na alimentação, sem separar os vinhos. A Casa Cima teve cobrança prévia de R$ 190,98; o restante da diária é no check-in. A hospedagem Kóor foi paga no dia 17, em dólar.</p>
+      <p class="gastos-note">Gastos em ARS (crédito) convertidos pela cotação via cartão: AR$ 1 ≈ R$ 0,00361, com IOF e spread. Gastos em USD (Nomad) pela taxa travada: US$ 1 = R$ 5,292, sem IOF adicional. O primeiro total soma os gastos do dia a dia (dias 1-5), que já incluem a Kóor e a prévia da Casa Cima. O segundo total acrescenta os voos e o seguro (pagos antes) e a hospedagem ainda a pagar no check-out. A diferença para o orçamento dinâmico (R$ 28.109) é o que ainda falta gastar nos dias 6 a 8.</p>
     </div>
   </div>
 </section>
