@@ -1099,6 +1099,75 @@
     color: var(--ink-mute);
     text-align: right;
   }
+  .gastos-daymark td {
+    background: var(--paper-warm);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ember);
+    font-weight: 600;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .gastos-total-geral td {
+    background: var(--ink);
+    color: white;
+    font-weight: 600;
+    padding: 16px 12px;
+    border: none;
+    font-size: 14px;
+  }
+  .gastos-total-geral td:first-child {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--ice);
+    text-align: right;
+  }
+  .gastos-total-geral td:last-child {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    color: white;
+  }
+
+  /* DIÁRIO RECORDATÓRIO */
+  .diary {
+    background: linear-gradient(135deg, rgba(200, 81, 30, 0.05), rgba(184, 137, 61, 0.08));
+    border-left: 3px solid var(--ember);
+    border-radius: 0 8px 8px 0;
+    padding: 22px 26px;
+    margin-top: 24px;
+  }
+  .diary-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ember);
+    font-weight: 600;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .diary-label::before {
+    content: '✎';
+    font-size: 13px;
+  }
+  .diary-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+    font-style: italic;
+  }
+  .diary-text strong {
+    font-style: normal;
+    color: var(--ink);
+    font-weight: 600;
+  }
   .gastos-note {
     font-size: 12.5px;
     color: var(--ink-mute);
@@ -1147,7 +1216,7 @@
       </div>
       <div>
         <div class="hero-stat-label">Investimento</div>
-        <div class="hero-stat-value">~ R$ 26,6 mil</div>
+        <div class="hero-stat-value">~ R$ 26,5 mil</div>
       </div>
     </div>
   </div>
@@ -1433,49 +1502,38 @@
       </div>
       <div class="day-content">
         <h3>Cerro Castor, primeiro dia</h3>
-        <p>Reconhecimento das pistas e introdução à neve real após escola indoor em São Paulo.</p>
-
-        <div class="lodging-watch" style="margin-bottom: 24px;">
-          <strong>Skipass diário, nunca o pacote de vários dias.</strong> Hóspedes relatam que compraram o passe de múltiplos dias e, quando o vento fechou os teleféricos, a estação recusou remarcar. Comprando dia a dia, você não perde nada se o tempo virar. Reserve o equipamento online antes: garante disponibilidade e reduz a fila na chegada.
-        </div>
+        <p>Primeiro dia de neve real após a escola indoor em São Paulo. Snowboard para os pais, esqui para o filho.</p>
 
         <div class="timeline">
           <div class="timeline-item">
-            <div class="timeline-time">07h</div>
-            <div class="timeline-text">Acordar. Passar no mercado ao lado para comprar <strong>abacate</strong> e preparar sanduíches para levar à estação — almoço garantido dentro das restrições, sem depender da cantina.</div>
+            <div class="timeline-time">Manhã</div>
+            <div class="timeline-text">Café da manhã em casa e preparo dos <strong>sanduíches</strong> para levar à estação — almoço garantido dentro das restrições.</div>
           </div>
           <div class="timeline-item">
-            <div class="timeline-time">08h30</div>
-            <div class="timeline-text">Uber cidade → <strong><a href="https://www.cerrocastor.com" target="_blank" rel="noopener">Cerro Castor</a></strong> (26 km, cerca de 30 min).</div>
+            <div class="timeline-time">11h</div>
+            <div class="timeline-text">Uber cidade → <strong><a href="https://www.cerrocastor.com" target="_blank" rel="noopener">Cerro Castor</a></strong> (26 km).</div>
           </div>
           <div class="timeline-item">
-            <div class="timeline-time">09h</div>
-            <div class="timeline-text">Chegada e <strong>retirada de equipamento</strong> (snowboard para um adulto, esqui para os outros dois) + capacetes + óculos + locker (R$ 75) + skipass diário (R$ 1.300 família) + aluguel (R$ 638 família). <strong>Luvas, calças e jaquetas já são de vocês — não alugar.</strong> Retirar com calma antes do teleférico abrir.</div>
+            <div class="timeline-time">11h30 — 13h30</div>
+            <div class="timeline-text">Compra dos <strong>ingressos</strong>, aluguel do equipamento (2 snowboard com bota e capacete + 1 esqui com capacete para a criança) e mochila no <strong>locker</strong>.</div>
           </div>
           <div class="timeline-item">
-            <div class="timeline-time">10h — 12h30</div>
-            <div class="timeline-text"><strong>Teleférico abre às 10h.</strong> Esqui matutino com intervalos curtos para o filho. Pistas de iniciante: <strong>Eros, Caprichoso, Apolo.</strong></div>
+            <div class="timeline-time">13h30</div>
+            <div class="timeline-text"><strong>Subida da montanha de teleférico.</strong> Tarde de esqui e snowboard nas pistas de iniciante.</div>
           </div>
           <div class="timeline-item">
-            <div class="timeline-time">13h</div>
-            <div class="timeline-text">Almoço com os sanduíches preparados de manhã, na área de descanso da estação.</div>
+            <div class="timeline-time">17h</div>
+            <div class="timeline-text">Descida da montanha. Almoço tardio com os <strong>sanduíches, água e batata chips</strong> na estação.</div>
           </div>
           <div class="timeline-item">
-            <div class="timeline-time">14h — 15h</div>
-            <div class="timeline-text">Mais 1 a 1h30 de esqui leve.</div>
+            <div class="timeline-time">18h</div>
+            <div class="timeline-text">Uber de volta. Chegada em casa e descanso.</div>
           </div>
-          <div class="timeline-item">
-            <div class="timeline-time">15h30</div>
-            <div class="timeline-text"><strong>Devolução do equipamento no próprio Cerro Castor</strong>, antes de voltar. Aluguel é diário: retira e devolve no mesmo dia. Depois, Uber de volta a Ushuaia.</div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">17h — 19h</div>
-            <div class="timeline-text">Descanso, banho quente.</div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">20h</div>
-            <div class="timeline-text">Jantar refeição pronta no apartamento (frango assado pré-pronto + salada + fruta).</div>
-          </div>
+        </div>
+
+        <div class="diary">
+          <div class="diary-label">Diário · dia 3</div>
+          <div class="diary-text">O dia do esqui começou sem pressa: <strong>café da manhã em casa e sanduíches preparados</strong> para levar. Fomos de Uber às 11h e, já no Cerro Castor, compramos os ingressos, alugamos o equipamento e guardamos a mochila no locker. Por volta das <strong>13h30 estávamos subindo a montanha de teleférico</strong>. Descemos às 17h, comemos os sanduíches com água e batata chips, esperamos o Uber e voltamos para casa, chegando por volta das <strong>18h</strong>.</div>
         </div>
       </div>
     </div>
@@ -1488,29 +1546,30 @@
         <span class="day-tag">Livre · Centro</span>
       </div>
       <div class="day-content">
-        <h3>Museu do presídio e centro</h3>
-        <p>Descanso muscular entre os dois dias de esqui, com troca de hospedagem pela manhã e o museu mais imperdível da cidade à tarde.</p>
+        <h3>O dia do apagão</h3>
+        <p>Troca de hospedagem para a Casa Cima e um dia atípico: a cidade inteira ficou sem energia, e a caminhada até o museu esbarrou na falta de internet.</p>
         <div class="timeline">
           <div class="timeline-item">
-            <div class="timeline-time">10h</div>
-            <div class="timeline-text"><strong>Troca de hospedagem:</strong> check-out do Kóor Stays e caminhada de 3 a 4 minutos até a <strong>Casa Cima</strong> (Gob. Deloqui 1514). Como o check-in é às 15h, deixe as malas guardadas na recepção. Malas organizadas na noite anterior.</div>
+            <div class="timeline-time">Manhã</div>
+            <div class="timeline-text">Café da manhã em casa. <strong>Troca de hospedagem:</strong> check-out do Kóor Stays e mudança para a <strong>Casa Cima</strong> (Gob. Deloqui 1514).</div>
           </div>
           <div class="timeline-item">
-            <div class="timeline-time">11h — 13h</div>
-            <div class="timeline-text">Caminhada pela <strong>Avenida San Martín</strong> e pelo porto. Lojas, chocolaterias e cafés aquecidos. Ritmo lento, sem compromisso.</div>
+            <div class="timeline-time">Tarde</div>
+            <div class="timeline-text">Caminhada pela <strong>Avenida San Martín</strong> até o <strong>Museu Marítimo e do Presídio</strong>. Sem energia na cidade e sem internet, não foi possível comprar os ingressos — o museu ficou para outro dia.</div>
           </div>
           <div class="timeline-item">
-            <div class="timeline-time">13h30</div>
-            <div class="timeline-text">Almoço no centro.</div>
+            <div class="timeline-time">18h30</div>
+            <div class="timeline-text">Jantar no <strong><a href="https://www.google.com/maps/search/?api=1&amp;query=-54.8065748%2C-68.3051411&amp;query_place_id=ChIJK15solEjTLwRJNzIzRYq7fs" target="_blank" rel="noopener">Augusto Ushuaia</a></strong> (Av. San Martín 508) — cozinha com boas opções e ingredientes de qualidade.</div>
           </div>
           <div class="timeline-item">
-            <div class="timeline-time">15h — 17h30</div>
-            <div class="timeline-text"><strong><a href="https://www.google.com/maps/search/?api=1&amp;query=-54.8035636%2C-68.2978787&amp;query_place_id=ChIJIw3G2t0iTLwRtr9T_IJUHr4" target="_blank" rel="noopener">Museu Marítimo e do Presídio</a></strong> — cadeia mais ao sul do mundo, aberto 10h—20h. Várias alas: prisão, história naval, exploração polar e galeria de arte. Indoor e aquecido, no ritmo da criança. <strong>Entrada AR$ 40.000 por adulto.</strong> Check-in efetivo na Casa Cima na volta.</div>
+            <div class="timeline-time">19h</div>
+            <div class="timeline-text">Volta a pé para a Casa Cima.</div>
           </div>
-          <div class="timeline-item">
-            <div class="timeline-time">20h</div>
-            <div class="timeline-text">Jantar no <strong><a href="https://www.google.com/maps/search/?api=1&amp;query=-54.801388%2C-68.305519&amp;query_place_id=ChIJ2_ifJt4iTLwRLq7hTOZ3dYU" target="_blank" rel="noopener">Kalma Resto</a></strong> — o mais flexível com restrições alimentares, menu com ingredientes locais. Reservar com antecedência. <strong>R$ 600 a 800.</strong></div>
-          </div>
+        </div>
+
+        <div class="diary">
+          <div class="diary-label">Diário · dia 4</div>
+          <div class="diary-text">Tomamos café da manhã em casa e a cidade <strong>ficou sem energia o dia inteiro</strong>. Saímos para caminhar pela Av. San Martín até o Museo, mas, como não havia internet em Ushuaia inteira, <strong>não conseguimos comprar os ingressos do museu</strong> e voltamos. Paramos no restaurante <strong>Augusto</strong> e comemos às 18h30; às 19h voltamos andando para a Casa Cima.</div>
         </div>
       </div>
     </div>
@@ -1523,8 +1582,8 @@
         <span class="day-tag">Cultura · Copa</span>
       </div>
       <div class="day-content">
-        <h3>Manhã tranquila e a final</h3>
-        <p>Domingo leve antes do segundo dia de esqui: manhã sem compromisso e a final da Copa do Mundo à tarde. Neva neste fim de semana, deixando a neve fresca para segunda.</p>
+        <h3>Lago congelado e a final</h3>
+        <p>Manhã tranquila em casa e, à tarde, um passeio pelo lago congelado, a placa de Ushuaia e o museu, antes da final da Copa do Mundo às 16h.</p>
 
         <div class="lodging-watch" style="margin-bottom: 24px;">
           <strong>Final da Copa do Mundo · 16h · Argentina x Espanha.</strong> A Argentina garantiu vaga na final. A cidade inteira vai parar para assistir, e todo bar fica cheio. Reserve mesa no Krund com antecedência e chegue cedo para garantir lugar.
@@ -1532,20 +1591,16 @@
 
         <div class="timeline">
           <div class="timeline-item">
-            <div class="timeline-time">Manhã livre</div>
-            <div class="timeline-text">Manhã sem pressa na Casa Cima, aproveitando a vista do canal. A nevada do fim de semana prepara a neve para o esqui de amanhã.</div>
+            <div class="timeline-time">Manhã</div>
+            <div class="timeline-text">Café da manhã em casa, sem pressa. A nevada do fim de semana prepara a neve para o esqui de amanhã.</div>
           </div>
           <div class="timeline-item">
-            <div class="timeline-time">11h30</div>
-            <div class="timeline-text">Volta curta pela orla e pelo centro, chocolaterias e cafés. Compras de véspera para o esqui, se faltar algo.</div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">14h</div>
-            <div class="timeline-text">Almoço e um tempo de descanso na Casa Cima antes do jogo.</div>
+            <div class="timeline-time">13h</div>
+            <div class="timeline-text">Saída para o <strong>lago congelado</strong>, a <strong>placa de Ushuaia</strong> (o cartão-postal do "fim do mundo") e o <strong><a href="https://www.google.com/maps/search/?api=1&amp;query=-54.8035636%2C-68.2978787&amp;query_place_id=ChIJIw3G2t0iTLwRtr9T_IJUHr4" target="_blank" rel="noopener">Museu Marítimo e do Presídio</a></strong> — nova tentativa, agora com a cidade normalizada.</div>
           </div>
           <div class="timeline-item">
             <div class="timeline-time">15h30</div>
-            <div class="timeline-text">Caminhada até o <strong><a href="https://www.google.com/maps/search/?api=1&amp;query=-54.804786500000006%2C-68.30284019999999&amp;query_place_id=ChIJxYshGCcjTLwRk06YHCdxiq4" target="_blank" rel="noopener">Krund Ushuaia</a></strong> (Gob. Deloqui 289, a poucos minutos a pé). Brewpub tranquilo, com área interna e coberta, clima descontraído e menos turístico. Chegar cedo para garantir mesa.</div>
+            <div class="timeline-text">Caminhada até o <strong><a href="https://www.google.com/maps/search/?api=1&amp;query=-54.804786500000006%2C-68.30284019999999&amp;query_place_id=ChIJxYshGCcjTLwRk06YHCdxiq4" target="_blank" rel="noopener">Krund Ushuaia</a></strong> (Gob. Deloqui 289, a poucos minutos a pé). Brewpub tranquilo, com área interna e coberta. Chegar cedo para garantir mesa.</div>
           </div>
           <div class="timeline-item">
             <div class="timeline-time">16h</div>
@@ -1555,6 +1610,11 @@
             <div class="timeline-time">19h</div>
             <div class="timeline-text">Volta tranquila à Casa Cima. Jantar leve, refeição do mercado.</div>
           </div>
+        </div>
+
+        <div class="diary">
+          <div class="diary-label">Diário · dia 5</div>
+          <div class="diary-text">Café da manhã em casa e saída às 13h para o <strong>lago congelado</strong>, a <strong>placa de Ushuaia</strong> e o Museo. Às 16h, a <strong>final da Copa do Mundo</strong>.</div>
         </div>
       </div>
     </div>
@@ -1568,7 +1628,7 @@
       </div>
       <div class="day-content">
         <h3>Cerro Castor com neve fresca</h3>
-        <p>Segundo dia de esqui aproveitando a neve macia que caiu no fim de semana. Devolução de equipamento ao final e jantar de despedida no Kaupé.</p>
+        <p>Segundo dia de esqui aproveitando a neve macia que caiu no fim de semana. Devolução de equipamento ao final e jantar de despedida no Kalma.</p>
         <div class="timeline">
           <div class="timeline-item">
             <div class="timeline-time">07h30</div>
@@ -1588,7 +1648,7 @@
           </div>
           <div class="timeline-item">
             <div class="timeline-time">20h</div>
-            <div class="timeline-text">Jantar de despedida no <strong><a href="https://www.google.com/maps/search/?api=1&amp;query=-54.8032376%2C-68.30619&amp;query_place_id=ChIJpU_Nbd8iTLwRLpju0qJla1A" target="_blank" rel="noopener">Kaupé</a></strong> — alta gastronomia patagônica, vista da baía, prato adaptado pré-confirmado 48h antes. <strong>R$ 800 a 1.000.</strong></div>
+            <div class="timeline-text"><strong>Jantar agendado no <a href="https://www.google.com/maps/search/?api=1&amp;query=-54.801388%2C-68.305519&amp;query_place_id=ChIJ2_ifJt4iTLwRLq7hTOZ3dYU" target="_blank" rel="noopener">Kalma Resto</a></strong> — o mais flexível com restrições alimentares, menu com ingredientes locais e forrageados. Reserva confirmada. <strong>R$ 600 a 800.</strong></div>
           </div>
         </div>
       </div>
@@ -1742,19 +1802,19 @@
       </div>
 
       <div class="restaurant">
-        <a href="https://www.google.com/maps/search/?api=1&amp;query=-54.8032376%2C-68.30619&amp;query_place_id=ChIJpU_Nbd8iTLwRLpju0qJla1A" target="_blank" rel="noopener" class="restaurant-name-link">
-          <div class="restaurant-name">Kaupé</div>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=-54.8065748%2C-68.3051411&amp;query_place_id=ChIJK15solEjTLwRJNzIzRYq7fs" target="_blank" rel="noopener" class="restaurant-name-link">
+          <div class="restaurant-name">Augusto Ushuaia</div>
         </a>
-        <div class="restaurant-tag">Despedida · 4,7 ★</div>
-        <p class="restaurant-desc">Referência em frutos do mar, no alto da colina, com a melhor vista da baía. Sorvetes feitos na casa. Peça a harmonização de vinhos. No inverno, abre só para jantar.</p>
+        <div class="restaurant-tag">Cozinha variada · 4,4 ★</div>
+        <p class="restaurant-desc">No centro, na Av. San Martín. Boas opções vegetarianas e ingredientes de qualidade, equipe que fala vários idiomas. Onde a família jantou no dia do apagão.</p>
         <div class="restaurant-info">
-          <span>Pres. Roca 470</span>
-          <span>+54 2901 58-5854</span>
-          <span>18h30 — 23h · fecha domingo</span>
+          <span>Av. San Martín 508</span>
+          <span>+54 9 2901 58-6000</span>
+          <span>12h — 23h · todos os dias</span>
         </div>
         <div class="restaurant-meta">
-          <span>Reserva: 45 dias antes</span>
-          <span class="restaurant-day">Dia 6 · Seg</span>
+          <span>Sem reserva</span>
+          <span class="restaurant-day">Dia 4 · Sáb</span>
         </div>
       </div>
 
@@ -1810,28 +1870,28 @@
       </div>
       <div class="budget-row">
         <div class="budget-icon">02</div>
-        <div class="budget-name">Hospedagem (3 estadias)<span>pago R$ 4.245 + extra Casa Cima R$ 179 · pode crescer</span></div>
-        <div class="budget-value">R$ 4.424</div>
+        <div class="budget-name">Hospedagem (3 estadias)<span>Kóor R$ 1.830 real + Casa Cima e Hostería est. ~10% acima do booking</span></div>
+        <div class="budget-value">R$ 4.669</div>
       </div>
       <div class="budget-row">
         <div class="budget-icon">03</div>
-        <div class="budget-name">Esqui completo<span>2 dias · estimativa · skipass + aluguel + locker</span></div>
-        <div class="budget-value">R$ 4.026</div>
+        <div class="budget-name">Esqui completo<span>aluguel R$ 1.898 + locker R$ 195 reais · skipass R$ 2.600 est.</span></div>
+        <div class="budget-value">R$ 4.693</div>
       </div>
       <div class="budget-row">
         <div class="budget-icon">04</div>
-        <div class="budget-name">Atividades<span>trenó R$ 942 real + museu R$ 300 est.</span></div>
-        <div class="budget-value">R$ 1.242</div>
+        <div class="budget-name">Atividades<span>trenó R$ 1.007 real + museu R$ 300 est.</span></div>
+        <div class="budget-value">R$ 1.307</div>
       </div>
       <div class="budget-row">
         <div class="budget-icon">05</div>
-        <div class="budget-name">Ubers + seguro<span>seguro R$ 473 + ubers R$ 216 reais + R$ 335 est.</span></div>
-        <div class="budget-value">R$ 1.024</div>
+        <div class="budget-name">Ubers + seguro<span>seguro R$ 473 + ubers R$ 501 reais + R$ 275 est.</span></div>
+        <div class="budget-value">R$ 1.249</div>
       </div>
       <div class="budget-row">
         <div class="budget-icon">06</div>
-        <div class="budget-name">Alimentação<span>R$ 1.639 real + restante estimado · sem vinhos</span></div>
-        <div class="budget-value">R$ 6.000</div>
+        <div class="budget-name">Alimentação<span>R$ 1.923 real + restante estimado · sem vinhos</span></div>
+        <div class="budget-value">R$ 4.723</div>
       </div>
       <div class="budget-row">
         <div class="budget-icon">07</div>
@@ -1841,28 +1901,28 @@
       <div class="budget-row budget-total">
         <div class="budget-icon">∑</div>
         <div class="budget-name">Total dinâmico</div>
-        <div class="budget-value">R$ 26.624</div>
+        <div class="budget-value">R$ 26.549</div>
       </div>
     </div>
 
     <div class="composition">
       <h4>Composição do orçamento</h4>
       <div class="composition-bar">
-        <div class="composition-segment" style="width: 35.2%; background: #0a1628;" title="Voos"></div>
-        <div class="composition-segment" style="width: 22.5%; background: #c8511e;" title="Alimentação"></div>
-        <div class="composition-segment" style="width: 16.6%; background: #b8893d;" title="Hospedagem"></div>
-        <div class="composition-segment" style="width: 15.1%; background: #6b8aa3;" title="Esqui"></div>
-        <div class="composition-segment" style="width: 4.7%; background: #e8a47a;" title="Atividades"></div>
-        <div class="composition-segment" style="width: 3.8%; background: #4a5d76;" title="Ubers + Seguro"></div>
+        <div class="composition-segment" style="width: 35.3%; background: #0a1628;" title="Voos"></div>
+        <div class="composition-segment" style="width: 17.8%; background: #c8511e;" title="Alimentação"></div>
+        <div class="composition-segment" style="width: 17.7%; background: #6b8aa3;" title="Esqui"></div>
+        <div class="composition-segment" style="width: 17.6%; background: #b8893d;" title="Hospedagem"></div>
+        <div class="composition-segment" style="width: 4.9%; background: #e8a47a;" title="Atividades"></div>
+        <div class="composition-segment" style="width: 4.7%; background: #4a5d76;" title="Ubers + Seguro"></div>
         <div class="composition-segment" style="width: 2.0%; background: #7a9b6b;" title="Compras"></div>
       </div>
       <div class="composition-legend">
         <div class="composition-item"><span class="composition-dot" style="background: #0a1628;"></span>Voos<span class="composition-pct" style="margin-left: auto;">35%</span></div>
-        <div class="composition-item"><span class="composition-dot" style="background: #c8511e;"></span>Alimentação<span class="composition-pct" style="margin-left: auto;">23%</span></div>
-        <div class="composition-item"><span class="composition-dot" style="background: #b8893d;"></span>Hospedagem<span class="composition-pct" style="margin-left: auto;">17%</span></div>
-        <div class="composition-item"><span class="composition-dot" style="background: #6b8aa3;"></span>Esqui<span class="composition-pct" style="margin-left: auto;">15%</span></div>
+        <div class="composition-item"><span class="composition-dot" style="background: #c8511e;"></span>Alimentação<span class="composition-pct" style="margin-left: auto;">18%</span></div>
+        <div class="composition-item"><span class="composition-dot" style="background: #6b8aa3;"></span>Esqui<span class="composition-pct" style="margin-left: auto;">18%</span></div>
+        <div class="composition-item"><span class="composition-dot" style="background: #b8893d;"></span>Hospedagem<span class="composition-pct" style="margin-left: auto;">18%</span></div>
         <div class="composition-item"><span class="composition-dot" style="background: #e8a47a;"></span>Atividades<span class="composition-pct" style="margin-left: auto;">5%</span></div>
-        <div class="composition-item"><span class="composition-dot" style="background: #4a5d76;"></span>Ubers + Seguro<span class="composition-pct" style="margin-left: auto;">4%</span></div>
+        <div class="composition-item"><span class="composition-dot" style="background: #4a5d76;"></span>Ubers + Seguro<span class="composition-pct" style="margin-left: auto;">5%</span></div>
         <div class="composition-item"><span class="composition-dot" style="background: #7a9b6b;"></span>Compras<span class="composition-pct" style="margin-left: auto;">2%</span></div>
       </div>
     </div>
@@ -1884,13 +1944,13 @@
       </div>
       <div class="nomad-card nomad-card-highlight">
         <div class="nomad-label">Saldo Nomad em dólar</div>
-        <div class="nomad-value">US$ 1.772,18</div>
-        <div class="nomad-sub">após US$ 226,37 gastos no dia 2</div>
+        <div class="nomad-value">US$ 1.181,74</div>
+        <div class="nomad-sub">após US$ 816,81 gastos (dias 2 e 3)</div>
       </div>
       <div class="nomad-card">
-        <div class="nomad-label">Gasto total · dias 1-3</div>
-        <div class="nomad-value">R$ 3.969</div>
-        <div class="nomad-sub">R$ 2.771 no crédito + R$ 1.198 na Nomad</div>
+        <div class="nomad-label">Gasto total · dias 1-4</div>
+        <div class="nomad-value">R$ 7.515</div>
+        <div class="nomad-sub">R$ 3.193 no crédito + R$ 4.323 na Nomad</div>
       </div>
     </div>
 
@@ -1924,147 +1984,50 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>15 jul</td>
-            <td>Pedágios até o estacionamento</td>
-            <td>R$ 16,26</td>
-            <td>Crédito</td>
-            <td>R$ 16,26</td>
-          </tr>
-          <tr>
-            <td>15 jul</td>
-            <td>Uber em São Paulo</td>
-            <td>R$ 48,31</td>
-            <td>Crédito</td>
-            <td>R$ 48,31</td>
-          </tr>
-          <tr>
-            <td>15 jul</td>
-            <td>2 eSIM Holafly</td>
-            <td>R$ 399,96</td>
-            <td>Crédito</td>
-            <td>R$ 399,96</td>
-          </tr>
-          <tr>
-            <td>15 jul</td>
-            <td>Uber aeroporto → Kóor Stays</td>
-            <td>AR$ 8.860</td>
-            <td>Crédito</td>
-            <td>R$ 32,00</td>
-          </tr>
-          <tr>
-            <td>15 jul</td>
-            <td>Mercado La Anónima</td>
-            <td>AR$ 76.514</td>
-            <td>Crédito</td>
-            <td>R$ 276,22</td>
-          </tr>
-          <tr>
-            <td>15 jul</td>
-            <td>Jantar María Lola</td>
-            <td>AR$ 198.450</td>
-            <td>Crédito</td>
-            <td>R$ 716,40</td>
-          </tr>
-          <tr class="gastos-subtotal">
-            <td colspan="4">Total do dia 1 · crédito</td>
-            <td>R$ 1.489,15</td>
-          </tr>
-          <tr>
-            <td>16 jul</td>
-            <td>Uber trenó · ida</td>
-            <td>AR$ 26.329</td>
-            <td>Crédito</td>
-            <td>R$ 95,05</td>
-          </tr>
-          <tr>
-            <td>16 jul</td>
-            <td>Uber trenó · volta</td>
-            <td>AR$ 13.339</td>
-            <td>Crédito</td>
-            <td>R$ 48,15</td>
-          </tr>
-          <tr>
-            <td>16 jul</td>
-            <td>Trenó com huskies (mãe + filho)</td>
-            <td>AR$ 220.000</td>
-            <td>Crédito</td>
-            <td>R$ 794,20</td>
-          </tr>
-          <tr>
-            <td>16 jul</td>
-            <td>Fotos do trenó</td>
-            <td>AR$ 38.000</td>
-            <td>Crédito</td>
-            <td>R$ 137,18</td>
-          </tr>
-          <tr>
-            <td>16 jul</td>
-            <td>Café no trenó</td>
-            <td>AR$ 3.000</td>
-            <td>Crédito</td>
-            <td>R$ 10,83</td>
-          </tr>
-          <tr>
-            <td>16 jul</td>
-            <td>Uber shopping · ida</td>
-            <td>AR$ 4.951</td>
-            <td>Crédito</td>
-            <td>R$ 17,87</td>
-          </tr>
-          <tr>
-            <td>16 jul</td>
-            <td>Almoço no shopping</td>
-            <td>US$ 22,50</td>
-            <td>Nomad</td>
-            <td>R$ 119,07</td>
-          </tr>
-          <tr>
-            <td>16 jul</td>
-            <td>Mercado · comidas</td>
-            <td>US$ 45,90</td>
-            <td>Nomad</td>
-            <td>R$ 242,90</td>
-          </tr>
-          <tr>
-            <td>16 jul</td>
-            <td>Mercado · vinhos p/ Brasil <em>(provisório)</em></td>
-            <td>US$ 100,00</td>
-            <td>Nomad</td>
-            <td>R$ 529,20</td>
-          </tr>
-          <tr>
-            <td>16 jul</td>
-            <td>Uber shopping · volta</td>
-            <td>US$ 4,25</td>
-            <td>Nomad</td>
-            <td>R$ 22,49</td>
-          </tr>
-          <tr>
-            <td>16 jul</td>
-            <td>Jantar Bodegón Fueguino</td>
-            <td>US$ 53,72</td>
-            <td>Nomad</td>
-            <td>R$ 284,29</td>
-          </tr>
-          <tr class="gastos-subtotal">
-            <td colspan="4">Total do dia 2 · R$ 1.103 crédito + R$ 1.198 Nomad</td>
-            <td>R$ 2.301,23</td>
-          </tr>
-          <tr>
-            <td>17 jul</td>
-            <td>Casa Cima · cobrança parcial (taxa/caução)</td>
-            <td>AR$ 49.497,80</td>
-            <td>Crédito</td>
-            <td>R$ 178,69</td>
-          </tr>
-          <tr class="gastos-subtotal">
-            <td colspan="4">Total do dia 3 · crédito · parcial</td>
-            <td>R$ 178,69</td>
-          </tr>
+          <tr class="gastos-daymark"><td colspan="5">Dia 1 · 15 jul</td></tr>
+          <tr><td>15 jul</td><td>Pedágios até o estacionamento</td><td>R$ 16,26</td><td>Crédito</td><td>R$ 16,26</td></tr>
+          <tr><td>15 jul</td><td>Uber em São Paulo</td><td>R$ 48,31</td><td>Crédito</td><td>R$ 48,31</td></tr>
+          <tr><td>15 jul</td><td>Uber da chegada</td><td>R$ 33,99</td><td>Crédito</td><td>R$ 33,99</td></tr>
+          <tr><td>15 jul</td><td>Mercado La Anónima</td><td>R$ 295,32</td><td>Crédito</td><td>R$ 295,32</td></tr>
+          <tr><td>15 jul</td><td>Jantar María Lola</td><td>R$ 765,98</td><td>Crédito</td><td>R$ 765,98</td></tr>
+          <tr class="gastos-subtotal"><td colspan="4">Total do dia 1 · crédito</td><td>R$ 1.159,86</td></tr>
+
+          <tr class="gastos-daymark"><td colspan="5">Dia 2 · 16 jul</td></tr>
+          <tr><td>16 jul</td><td>2 eSIM de internet</td><td>R$ 424,11</td><td>Crédito</td><td>R$ 424,11</td></tr>
+          <tr><td>16 jul</td><td>Casa Cima · cobrança prévia</td><td>R$ 190,98</td><td>Crédito</td><td>R$ 190,98</td></tr>
+          <tr><td>16 jul</td><td>Uber trenó · ida</td><td>R$ 94,86</td><td>Crédito</td><td>R$ 94,86</td></tr>
+          <tr><td>16 jul</td><td>Trenó com huskies (Siberianos)</td><td>R$ 848,87</td><td>Crédito</td><td>R$ 848,87</td></tr>
+          <tr><td>16 jul</td><td>Fotos do trenó</td><td>R$ 146,62</td><td>Crédito</td><td>R$ 146,62</td></tr>
+          <tr><td>16 jul</td><td>Café no trenó</td><td>R$ 11,56</td><td>Crédito</td><td>R$ 11,56</td></tr>
+          <tr><td>16 jul</td><td>Uber trenó · volta</td><td>R$ 88,90</td><td>Crédito</td><td>R$ 88,90</td></tr>
+          <tr><td>16 jul</td><td>Uber shopping · ida</td><td>R$ 17,84</td><td>Crédito</td><td>R$ 17,84</td></tr>
+          <tr><td>16 jul</td><td>Almoço no shopping</td><td>US$ 22,50</td><td>Nomad</td><td>R$ 119,07</td></tr>
+          <tr><td>16 jul</td><td>Mercado · comidas</td><td>US$ 45,90</td><td>Nomad</td><td>R$ 242,90</td></tr>
+          <tr><td>16 jul</td><td>Mercado · vinhos p/ Brasil <em>(provisório)</em></td><td>US$ 100,00</td><td>Nomad</td><td>R$ 529,20</td></tr>
+          <tr><td>16 jul</td><td>Uber shopping · volta</td><td>US$ 4,25</td><td>Nomad</td><td>R$ 22,49</td></tr>
+          <tr><td>16 jul</td><td>Jantar Bodegón Fueguino</td><td>US$ 53,72</td><td>Nomad</td><td>R$ 284,29</td></tr>
+          <tr class="gastos-subtotal"><td colspan="4">Total do dia 2 · R$ 1.824 crédito + R$ 1.198 Nomad</td><td>R$ 3.021,69</td></tr>
+
+          <tr class="gastos-daymark"><td colspan="5">Dia 3 · 17 jul · esqui</td></tr>
+          <tr><td>17 jul</td><td>Abacate (café da manhã)</td><td>US$ 3,53</td><td>Nomad</td><td>R$ 18,68</td></tr>
+          <tr><td>17 jul</td><td>Uber ski · ida</td><td>US$ 20,72</td><td>Nomad</td><td>R$ 109,65</td></tr>
+          <tr><td>17 jul</td><td>Aluguel equipamento (2 snowboard + 1 esqui)</td><td>US$ 179,36</td><td>Nomad</td><td>R$ 949,17</td></tr>
+          <tr><td>17 jul</td><td>Locker</td><td>US$ 18,38</td><td>Nomad</td><td>R$ 97,27</td></tr>
+          <tr><td>17 jul</td><td>Água</td><td>US$ 8,20</td><td>Nomad</td><td>R$ 43,39</td></tr>
+          <tr><td>17 jul</td><td>Mercado à noite</td><td>US$ 14,53</td><td>Nomad</td><td>R$ 76,89</td></tr>
+          <tr><td>17 jul</td><td>Hospedagem Kóor Stays (paga agora)</td><td>US$ 345,72</td><td>Nomad</td><td>R$ 1.829,55</td></tr>
+          <tr><td>17 jul</td><td>Uber ski · volta</td><td>R$ 133,06</td><td>Crédito</td><td>R$ 133,06</td></tr>
+          <tr class="gastos-subtotal"><td colspan="4">Total do dia 3 · R$ 133 crédito + R$ 3.125 Nomad</td><td>R$ 3.257,67</td></tr>
+
+          <tr class="gastos-daymark"><td colspan="5">Dia 4 · 18 jul</td></tr>
+          <tr><td>18 jul</td><td>Pão árabe recheado (Emilia)</td><td>R$ 76,21</td><td>Crédito</td><td>R$ 76,21</td></tr>
+          <tr><td>18 jul</td><td>Jantar Augusto Sabores</td><td colspan="2"><em>valor a lançar</em></td><td>—</td></tr>
+          <tr class="gastos-subtotal"><td colspan="4">Total do dia 4 · parcial</td><td>R$ 76,21</td></tr>
+
+          <tr class="gastos-total-geral"><td colspan="4">TOTAL GASTO ATÉ AGORA · R$ 3.193 crédito + R$ 4.323 Nomad</td><td>R$ 7.515,43</td></tr>
         </tbody>
       </table>
-      <p class="gastos-note">Gastos em ARS (crédito) convertidos pela cotação de hoje via cartão: AR$ 1 ≈ R$ 0,00361, com IOF e spread. Gastos em USD (Nomad) convertidos pela taxa travada na compra dos dólares: US$ 1 = R$ 5,292, sem IOF adicional. Cada gasto na Nomad abate do saldo em dólar. A cobrança da Casa Cima em 17 jul é adicional aos R$ 831,81 da reserva e pode ter mais parcelas — provável taxa local ou caução (parte pode ser devolvida).</p>
+      <p class="gastos-note">Gastos em ARS (crédito) convertidos pela cotação de hoje via cartão: AR$ 1 ≈ R$ 0,00361, com IOF e spread. Gastos em USD (Nomad) convertidos pela taxa travada na compra dos dólares: US$ 1 = R$ 5,292, sem IOF adicional. Cada gasto na Nomad abate do saldo em dólar. A Casa Cima teve uma cobrança prévia de R$ 190,98 no crédito; o restante da diária é cobrado no check-in. A hospedagem Kóor só foi paga de fato no dia 17, em dólar. Skipass e jantar do dia 4 ainda a lançar. Vinhos com valor provisório até você confirmar.</p>
     </div>
   </div>
 </section>
@@ -2087,7 +2050,7 @@
       <div class="reservation-block">
         <div class="reservation-when">45 dias antes · início de junho</div>
         <ul class="reservation-list">
-          <li><strong>Restaurante Kaupé</strong> · jantar de despedida (Meitre) <span>10 dias mín.</span></li>
+          <li><strong>Kalma Resto</strong> · jantar de despedida, segunda 20h · reserva confirmada</li>
         </ul>
       </div>
       <div class="reservation-block">
@@ -2269,7 +2232,7 @@
         <div class="gallery-link-url">+54 2901 50-1117 · fecha domingo</div>
       </a>
       <a href="https://www.google.com/maps/search/?api=1&amp;query=-54.801388%2C-68.305519&amp;query_place_id=ChIJ2_ifJt4iTLwRLq7hTOZ3dYU" target="_blank" rel="noopener" class="gallery-link">
-        <div class="gallery-link-icon">↗ DIA 4</div>
+        <div class="gallery-link-icon">↗ DIA 6</div>
         <div class="gallery-link-name">Kalma Resto</div>
         <div class="gallery-link-url">+54 2901 53-4734 · fecha domingo</div>
       </a>
@@ -2278,10 +2241,10 @@
         <div class="gallery-link-name">Bodegón Fueguino</div>
         <div class="gallery-link-url">+54 2901 43-1972 · fecha segunda</div>
       </a>
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=-54.8032376%2C-68.30619&amp;query_place_id=ChIJpU_Nbd8iTLwRLpju0qJla1A" target="_blank" rel="noopener" class="gallery-link">
-        <div class="gallery-link-icon">↗ DIA 6</div>
-        <div class="gallery-link-name">Kaupé</div>
-        <div class="gallery-link-url">+54 2901 58-5854 · fecha domingo</div>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=-54.8065748%2C-68.3051411&amp;query_place_id=ChIJK15solEjTLwRJNzIzRYq7fs" target="_blank" rel="noopener" class="gallery-link">
+        <div class="gallery-link-icon">↗ DIA 4</div>
+        <div class="gallery-link-name">Augusto Ushuaia</div>
+        <div class="gallery-link-url">San Martín 508 · todos os dias</div>
       </a>
       <a href="https://www.google.com/maps/search/?api=1&amp;query=-54.8062938%2C-68.3010465&amp;query_place_id=ChIJsaKLfuAiTLwRwi3oOd3p1EY" target="_blank" rel="noopener" class="gallery-link">
         <div class="gallery-link-icon">↗ DIA 7</div>
