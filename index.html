@@ -683,48 +683,6 @@
     color: var(--ember);
   }
 
-  /* GALLERY LINKS */
-  .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
-    margin-top: 24px;
-  }
-  .gallery-link {
-    border: 1px solid var(--rule-soft);
-    padding: 20px;
-    background: white;
-    text-decoration: none;
-    border-bottom: 1px solid var(--rule-soft);
-    transition: all 0.3s;
-    color: var(--ink) !important;
-  }
-  .gallery-link:hover {
-    border-color: var(--ember);
-    transform: translateY(-2px);
-    box-shadow: var(--shadow);
-    color: var(--ink) !important;
-  }
-  .gallery-link-icon {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    color: var(--ember);
-    margin-bottom: 8px;
-    letter-spacing: 0.1em;
-  }
-  .gallery-link-name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 4px;
-  }
-  .gallery-link-url {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 10px;
-    color: var(--ink-mute);
-    word-break: break-all;
-  }
-
   /* FOOTER */
   footer {
     padding: 64px 32px;
@@ -763,11 +721,10 @@
     .day-num { font-size: 56px; }
     .restaurants-grid { grid-template-columns: 1fr; }
     .attention-grid { grid-template-columns: 1fr; }
-    .gallery-grid { grid-template-columns: 1fr; }
     .composition-legend { grid-template-columns: 1fr; }
   }
   @media print {
-    .booking-cta, .gallery-link { break-inside: avoid; }
+    .booking-cta { break-inside: avoid; }
     section { break-inside: avoid; padding: 32px 0; }
   }
 
@@ -1237,7 +1194,7 @@
       </div>
       <div>
         <div class="hero-stat-label">Investimento</div>
-        <div class="hero-stat-value">~ R$ 28,1 mil</div>
+        <div class="hero-stat-value">~ R$ 27,6 mil</div>
       </div>
     </div>
   </div>
@@ -1924,8 +1881,8 @@
       </div>
       <div class="budget-row">
         <div class="budget-icon">05</div>
-        <div class="budget-name">Ubers + seguro<span>seguro R$ 473 + ubers R$ 559 reais + R$ 277 est.</span></div>
-        <div class="budget-value">R$ 1.309</div>
+        <div class="budget-name">Ubers<span>R$ 559 reais + R$ 277 estimados · chegada, trenó, esqui, aeroporto</span></div>
+        <div class="budget-value">R$ 836</div>
       </div>
       <div class="budget-row">
         <div class="budget-icon">06</div>
@@ -1940,19 +1897,19 @@
       <div class="budget-row budget-total">
         <div class="budget-icon">∑</div>
         <div class="budget-name">Total dinâmico</div>
-        <div class="budget-value">R$ 28.117</div>
+        <div class="budget-value">R$ 27.644</div>
       </div>
     </div>
 
     <div class="composition">
       <h4>Composição do orçamento</h4>
       <div class="composition-bar">
-        <div class="composition-segment" style="width: 33.4%; background: #0a1628;" title="Voos"></div>
-        <div class="composition-segment" style="width: 19.6%; background: #c8511e;" title="Alimentação"></div>
-        <div class="composition-segment" style="width: 19.2%; background: #6b8aa3;" title="Esqui"></div>
-        <div class="composition-segment" style="width: 16.6%; background: #b8893d;" title="Hospedagem"></div>
+        <div class="composition-segment" style="width: 33.9%; background: #0a1628;" title="Voos"></div>
+        <div class="composition-segment" style="width: 19.9%; background: #c8511e;" title="Alimentação"></div>
+        <div class="composition-segment" style="width: 19.6%; background: #6b8aa3;" title="Esqui"></div>
+        <div class="composition-segment" style="width: 16.9%; background: #b8893d;" title="Hospedagem"></div>
         <div class="composition-segment" style="width: 4.6%; background: #e8a47a;" title="Atividades"></div>
-        <div class="composition-segment" style="width: 4.7%; background: #4a5d76;" title="Ubers + Seguro"></div>
+        <div class="composition-segment" style="width: 3.0%; background: #4a5d76;" title="Ubers"></div>
         <div class="composition-segment" style="width: 1.9%; background: #7a9b6b;" title="Compras"></div>
       </div>
       <div class="composition-legend">
@@ -1961,7 +1918,7 @@
         <div class="composition-item"><span class="composition-dot" style="background: #6b8aa3;"></span>Esqui<span class="composition-pct" style="margin-left: auto;">19%</span></div>
         <div class="composition-item"><span class="composition-dot" style="background: #b8893d;"></span>Hospedagem<span class="composition-pct" style="margin-left: auto;">17%</span></div>
         <div class="composition-item"><span class="composition-dot" style="background: #e8a47a;"></span>Atividades<span class="composition-pct" style="margin-left: auto;">5%</span></div>
-        <div class="composition-item"><span class="composition-dot" style="background: #4a5d76;"></span>Ubers + Seguro<span class="composition-pct" style="margin-left: auto;">4%</span></div>
+        <div class="composition-item"><span class="composition-dot" style="background: #4a5d76;"></span>Ubers<span class="composition-pct" style="margin-left: auto;">3%</span></div>
         <div class="composition-item"><span class="composition-dot" style="background: #7a9b6b;"></span>Compras<span class="composition-pct" style="margin-left: auto;">2%</span></div>
       </div>
     </div>
@@ -2023,10 +1980,9 @@
           </tr>
         </thead>
         <tbody>
-          <tr class="gastos-daymark"><td colspan="5">Antes da viagem · voos e reservas</td></tr>
+          <tr class="gastos-daymark"><td colspan="5">Antes da viagem · voos</td></tr>
           <tr><td>Jun</td><td>Voos LATAM direto (GRU ↔ USH, 3 pessoas)</td><td>R$ 9.378,85</td><td>Crédito</td><td>R$ 9.378,85</td></tr>
-          <tr><td>Jun</td><td>Seguro viagem Assist Card</td><td>R$ 472,77</td><td>Crédito</td><td>R$ 472,77</td></tr>
-          <tr class="gastos-subtotal"><td colspan="4">Total antes da viagem</td><td>R$ 9.851,62</td></tr>
+          <tr class="gastos-subtotal"><td colspan="4">Total antes da viagem</td><td>R$ 9.378,85</td></tr>
 
           <tr class="gastos-daymark"><td colspan="5">Dia 1 · 15 jul</td></tr>
           <tr><td>15 jul</td><td>Pedágios até o estacionamento</td><td>R$ 16,26</td><td>Crédito</td><td>R$ 16,26</td></tr>
@@ -2086,257 +2042,59 @@
           <tr class="gastos-subtotal"><td colspan="4">Total a pagar</td><td>R$ 1.749,89</td></tr>
 
           <tr class="gastos-total-geral"><td colspan="4">TOTAL GASTO ATÉ AGORA · R$ 4.928 crédito + R$ 6.221 Nomad</td><td>R$ 11.148,45</td></tr>
-          <tr class="gastos-total-com-fixos"><td colspan="4">COM VOOS, SEGURO E HOSPEDAGEM A PAGAR</td><td>R$ 22.749,96</td></tr>
+          <tr class="gastos-total-com-fixos"><td colspan="4">COM VOOS E HOSPEDAGEM A PAGAR</td><td>R$ 22.277,19</td></tr>
         </tbody>
       </table>
-      <p class="gastos-note">Gastos em ARS (crédito) convertidos pela cotação via cartão: AR$ 1 ≈ R$ 0,00361, com IOF e spread. Gastos em USD (Nomad) pela taxa travada: US$ 1 = R$ 5,292, sem IOF adicional. O primeiro total soma os gastos do dia a dia (dias 1-5), que já incluem a Kóor e a prévia da Casa Cima. O segundo total acrescenta os voos e o seguro (pagos antes) e a hospedagem ainda a pagar no check-out. A diferença para o orçamento dinâmico (R$ 28.109) é o que ainda falta gastar nos dias 6 a 8.</p>
+      <p class="gastos-note">Gastos em ARS (crédito) convertidos pela cotação via cartão: AR$ 1 ≈ R$ 0,00361, com IOF e spread. Gastos em USD (Nomad) pela taxa travada: US$ 1 = R$ 5,292, sem IOF adicional. O primeiro total soma os gastos do dia a dia (dias 1-6), que já incluem a Kóor e a Casa Cima. O segundo total acrescenta os voos (pagos antes) e a Hostería, ainda a pagar no check-out. A diferença para o orçamento dinâmico (R$ 27.644) é o que ainda falta gastar nos dias 6 a 8.</p>
     </div>
   </div>
 </section>
 
-<!-- RESERVAS -->
-<section id="reservas">
-  <div class="page">
-    <div class="section-num">VII · Cronograma de reservas</div>
-    <h2>Em <em>ordem</em></h2>
-    <p class="section-sub">Algumas reservas críticas precisam ser feitas com 45 dias de antecedência. Outras só na chegada.</p>
 
-    <div class="reservations">
-      <div class="reservation-block">
-        <div class="reservation-when">Agora · imediato</div>
-        <ul class="reservation-list">
-          <li><strong>Voos LATAM</strong> — fechado <span>R$ 9.378,85</span></li>
-          <li><strong>Hospedagem · 3 estadias confirmadas</strong> · Kóor, Casa Cima, Hostería América <span>R$ 4.245</span></li>
-        </ul>
-      </div>
-      <div class="reservation-block">
-        <div class="reservation-when">45 dias antes · início de junho</div>
-        <ul class="reservation-list">
-          <li><strong>Kalma Resto</strong> · jantar de despedida, segunda 20h · reserva confirmada</li>
-        </ul>
-      </div>
-      <div class="reservation-block">
-        <div class="reservation-when">30 dias antes · meados de junho</div>
-        <ul class="reservation-list">
-          <li><strong>Trenó com huskies</strong> · WhatsApp Siberianos del Fuego, Husky Park ou Haruwen <span>confirme idade 6</span></li>
-          <li><strong>María Lola Restó</strong> · jantar dia 1 <span>WhatsApp</span></li>
-          <li><strong>Kalma Resto</strong> · jantar dia 4 <span>WhatsApp</span></li>
-          <li><strong>Bodegón Fueguino</strong> · jantar dia 2 · sem reserva, lista na porta <span>chegar 20h</span></li>
-        </ul>
-      </div>
-      <div class="reservation-block">
-        <div class="reservation-when">15 dias antes · final de junho</div>
-        <ul class="reservation-list">
-          <li><strong>Mesa no Krund para a final da Copa</strong> · 19 jul, chegar cedo <span>+54 2901 40-4038</span></li>
-          <li><strong>Trenó com huskies</strong> · Siberianos del Fuego <span>operadora local</span></li>
-        </ul>
-      </div>
-      <div class="reservation-block">
-        <div class="reservation-when">7 dias antes</div>
-        <ul class="reservation-list">
-          <li><strong>Confirmação de restaurantes</strong> com restrições alimentares por escrito (e-mail/WhatsApp) <span>48h antes</span></li>
-          <li><strong>Seguro Assist Card</strong> <span>antes de embarcar</span></li>
-        </ul>
-      </div>
-      <div class="reservation-block">
-        <div class="reservation-when">No dia · na chegada</div>
-        <ul class="reservation-list">
-          <li><strong>Skipass Cerro Castor</strong> · diário, não pacote</li>
-          <li><strong>Aluguel de equipamento no Cerro Castor</strong> · 1 snowboard + 2 esqui · diário, retira e devolve no mesmo dia · sem luvas, calças e jaquetas</li>
-          <li><strong>Museu Marítimo e do Presídio</strong></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- ATENÇÃO -->
 <section id="atencao">
   <div class="page">
-    <div class="section-num">VIII · Pontos de atenção</div>
+    <div class="section-num">VII · Pontos de atenção</div>
     <h2>O que <em>importa</em></h2>
-    <p class="section-sub">Detalhes que fazem diferença entre uma viagem boa e uma viagem incrível.</p>
+    <p class="section-sub">O que ainda vale ter em mente para os últimos dias.</p>
 
     <div class="attention-grid">
       <div class="attention-card">
         <h4>Restrições alimentares</h4>
         <ul>
-          <li>Avise sempre com 48h de antecedência por escrito (e-mail ou WhatsApp)</li>
-          <li>Mantenha lanches sin TACC e frutas como backup</li>
+          <li>Avisar sempre por escrito, com antecedência, nos restaurantes</li>
+          <li>Manter lanches sin TACC e frutas como backup</li>
           <li>La Anónima é o supermercado principal, perto do centro</li>
-          <li>Não experimente alimento desconhecido sem perguntar ingredientes</li>
         </ul>
       </div>
 
       <div class="attention-card">
-        <h4>Esqui no Cerro Castor</h4>
+        <h4>Museu do Presídio</h4>
         <ul>
-          <li>Skipass diário, não pacote rígido — estação pode fechar por vento ou nevasca</li>
-          <li>Locker compartilhado para a família é suficiente</li>
-          <li>Filho cansa rápido — intervale com chocolate quente e descanso</li>
-          <li>Shuttle oficial sai da Calle San Martín às 9h</li>
+          <li>Pendente três vezes: apagão, jogo e compra online</li>
+          <li>Terça (dia 7) é a última chance antes da volta</li>
+          <li>Conferir o horário no dia, para não perder</li>
         </ul>
       </div>
 
       <div class="attention-card">
-        <h4>Trenó com criança de 6 anos</h4>
+        <h4>Câmbio e cartões</h4>
         <ul>
-          <li>Não compre por agência genérica (Civitatis, Viator, GetYourGuide) — barram pela idade</li>
-          <li>Contate operadores diretos por WhatsApp</li>
-          <li>Confirme idade aceita antes de pagar</li>
-          <li>Trenó curto, sem velocidade, criança no colo do adulto</li>
+          <li>Na maquininha, sempre escolher pesos</li>
+          <li>Nomad para o dia a dia, crédito para cauções</li>
+          <li>Guardar comprovantes das cobranças de hospedagem</li>
         </ul>
       </div>
 
       <div class="attention-card">
-        <h4>Clima austral em julho</h4>
+        <h4>Documentação para a volta</h4>
         <ul>
-          <li>Temperatura: -5°C a +5°C, vento forte, neve frequente</li>
-          <li>Roupa térmica completa obrigatória</li>
-          <li>Sol nasce ~9h45 e se põe ~17h15</li>
-          <li>Programe atividades ao ar livre antes das 16h</li>
+          <li>Passaporte ou RG dentro da validade</li>
+          <li>Certidão de nascimento do Benjamim</li>
+          <li>Comprovante do voo de volta em mãos</li>
         </ul>
       </div>
-
-      <div class="attention-card">
-        <h4>Câmbio argentino</h4>
-        <ul>
-          <li>Leve dólar em espécie pra emergências</li>
-          <li>Use cartão de crédito brasileiro — taxa MEP automática</li>
-          <li>Evite trocar pesos no aeroporto (pior cotação)</li>
-          <li>Valores no roteiro são estimativas — câmbio é volátil</li>
-        </ul>
-      </div>
-
-      <div class="attention-card">
-        <h4>Documentação</h4>
-        <ul>
-          <li>Passaporte válido (preferencial) ou RG dentro da validade</li>
-          <li>Para criança: certidão de nascimento ou autorização notarial se viajar com só um dos pais</li>
-          <li>Comprovante de seguro viagem (Argentina pode pedir na imigração)</li>
-          <li>Comprovante de hospedagem e voo de volta</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- GALERIAS -->
-<section id="galerias">
-  <div class="page">
-    <div class="section-num">IX · Links</div>
-    <h2>Tudo em <em>um lugar</em></h2>
-    <p class="section-sub">Sites oficiais, mapas e telefones de cada hospedagem, restaurante e passeio do roteiro.</p>
-
-    <h4 style="margin-bottom: 16px;">Hospedagens</h4>
-    <div class="gallery-grid" style="margin-bottom: 40px;">
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=-54.8105594%2C-68.3219395&amp;query_place_id=ChIJp5bk7x4jTLwRyOz8JYjgRTc" target="_blank" rel="noopener" class="gallery-link">
-        <div class="gallery-link-icon">↗ 15 — 18 JUL</div>
-        <div class="gallery-link-name">Kóor Stays · Australis</div>
-        <div class="gallery-link-url">San Martín 1660 · +54 2901 40-6028</div>
-      </a>
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=-54.8092247%2C-68.3193022&amp;query_place_id=ChIJGZ_cJBIjTLwRK0n8KySmk00" target="_blank" rel="noopener" class="gallery-link">
-        <div class="gallery-link-icon">↗ 18 — 20 JUL</div>
-        <div class="gallery-link-name">Casa Cima</div>
-        <div class="gallery-link-url">Deloqui 1514 · +54 2901 65-5210</div>
-      </a>
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=-54.8091725%2C-68.3233517&amp;query_place_id=ChIJcQM6RD0jTLwRq7xEvlZqrjk" target="_blank" rel="noopener" class="gallery-link">
-        <div class="gallery-link-icon">↗ 20 — 22 JUL</div>
-        <div class="gallery-link-name">Hostería América</div>
-        <div class="gallery-link-url">Paz 1665 · +54 2901 42-3358</div>
-      </a>
-    </div>
-
-    <h4 style="margin-bottom: 16px;">Passeios e esqui</h4>
-    <div class="gallery-grid" style="margin-bottom: 40px;">
-      <a href="https://www.cerrocastor.com" target="_blank" rel="noopener" class="gallery-link">
-        <div class="gallery-link-icon">↗ ESQUI · SITE</div>
-        <div class="gallery-link-name">Cerro Castor</div>
-        <div class="gallery-link-url">cerrocastor.com · reservar equipamento online</div>
-      </a>
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=-54.724177%2C-68.017001&amp;query_place_id=ChIJM7htSQ8QTLwR7fEUk1j2ioU" target="_blank" rel="noopener" class="gallery-link">
-        <div class="gallery-link-icon">↗ ESQUI · MAPA</div>
-        <div class="gallery-link-name">Cerro Castor</div>
-        <div class="gallery-link-url">Ruta 3, km 26 · 4,7 ★</div>
-      </a>
-      <a href="https://tierramayor.com.ar/" target="_blank" rel="noopener" class="gallery-link">
-        <div class="gallery-link-icon">↗ TRENÓ · SITE</div>
-        <div class="gallery-link-name">Tierra Mayor</div>
-        <div class="gallery-link-url">tierramayor.com.ar · vale do trenó</div>
-      </a>
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=-54.804786500000006%2C-68.30284019999999&amp;query_place_id=ChIJxYshGCcjTLwRk06YHCdxiq4" target="_blank" rel="noopener" class="gallery-link">
-        <div class="gallery-link-icon">↗ COPA</div>
-        <div class="gallery-link-name">Krund Ushuaia</div>
-        <div class="gallery-link-url">Deloqui 289 · +54 2901 40-4038</div>
-      </a>
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=-54.7204717%2C-68.1057667&amp;query_place_id=ChIJq3Pv8BEQTLwRKXSTxZJXG20" target="_blank" rel="noopener" class="gallery-link">
-        <div class="gallery-link-icon">↗ TRENÓ</div>
-        <div class="gallery-link-name">Siberianos del Fuego</div>
-        <div class="gallery-link-url">+54 2901 50-9320 · 10h — 16h30</div>
-      </a>
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=-54.8035636%2C-68.2978787&amp;query_place_id=ChIJIw3G2t0iTLwRtr9T_IJUHr4" target="_blank" rel="noopener" class="gallery-link">
-        <div class="gallery-link-icon">↗ MUSEU</div>
-        <div class="gallery-link-name">Museu Marítimo e do Presídio</div>
-        <div class="gallery-link-url">+54 2901 43-7481 · 10h — 20h</div>
-      </a>
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=-54.8100267%2C-68.3186209&amp;query_place_id=ChIJT3eWchgjTLwRPsZtlHp5AOM" target="_blank" rel="noopener" class="gallery-link">
-        <div class="gallery-link-icon">↗ MERCADO</div>
-        <div class="gallery-link-name">La Anónima</div>
-        <div class="gallery-link-url">San Martín 1506 · 9h — 22h</div>
-      </a>
-    </div>
-
-    <h4 style="margin-bottom: 16px;">Restaurantes</h4>
-    <div class="gallery-grid" style="margin-bottom: 40px;">
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=-54.8076788%2C-68.3129548&amp;query_place_id=ChIJ3yY19yEjTLwR6IHn4zZNS-8" target="_blank" rel="noopener" class="gallery-link">
-        <div class="gallery-link-icon">↗ DIA 1</div>
-        <div class="gallery-link-name">María Lola Restó</div>
-        <div class="gallery-link-url">+54 2901 50-1117 · fecha domingo</div>
-      </a>
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=-54.801388%2C-68.305519&amp;query_place_id=ChIJ2_ifJt4iTLwRLq7hTOZ3dYU" target="_blank" rel="noopener" class="gallery-link">
-        <div class="gallery-link-icon">↗ DIA 6</div>
-        <div class="gallery-link-name">Kalma Resto</div>
-        <div class="gallery-link-url">+54 2901 53-4734 · fecha domingo</div>
-      </a>
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=-54.8076151%2C-68.3099163&amp;query_place_id=ChIJW7kY2CEjTLwRuveMjG933qQ" target="_blank" rel="noopener" class="gallery-link">
-        <div class="gallery-link-icon">↗ DIA 2</div>
-        <div class="gallery-link-name">Bodegón Fueguino</div>
-        <div class="gallery-link-url">+54 2901 43-1972 · fecha segunda</div>
-      </a>
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=-54.8065748%2C-68.3051411&amp;query_place_id=ChIJK15solEjTLwRJNzIzRYq7fs" target="_blank" rel="noopener" class="gallery-link">
-        <div class="gallery-link-icon">↗ DIA 4</div>
-        <div class="gallery-link-name">Augusto Ushuaia</div>
-        <div class="gallery-link-url">San Martín 508 · todos os dias</div>
-      </a>
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=-54.8062938%2C-68.3010465&amp;query_place_id=ChIJsaKLfuAiTLwRwi3oOd3p1EY" target="_blank" rel="noopener" class="gallery-link">
-        <div class="gallery-link-icon">↗ DIA 7</div>
-        <div class="gallery-link-name">El Viejo Marino</div>
-        <div class="gallery-link-url">Maipú 227 · almoço 11h — 14h30</div>
-      </a>
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=-54.80797%2C-68.30777&amp;query_place_id=ChIJVS1WQh8jTLwRiFFP9dW06xY" target="_blank" rel="noopener" class="gallery-link">
-        <div class="gallery-link-icon">↗ DIA 7</div>
-        <div class="gallery-link-name">Ramos Generales El Almacén</div>
-        <div class="gallery-link-url">+54 2901 42-4317 · todos os dias</div>
-      </a>
-    </div>
-
-    <h4 style="margin-bottom: 16px;">Viagem</h4>
-    <div class="gallery-grid">
-      <a href="https://www.latamairlines.com/br/pt" target="_blank" rel="noopener" class="gallery-link">
-        <div class="gallery-link-icon">↗ VOO</div>
-        <div class="gallery-link-name">LATAM</div>
-        <div class="gallery-link-url">latamairlines.com</div>
-      </a>
-      <a href="https://www.assistcard.com/br" target="_blank" rel="noopener" class="gallery-link">
-        <div class="gallery-link-icon">↗ SEGURO</div>
-        <div class="gallery-link-name">Assist Card</div>
-        <div class="gallery-link-url">assistcard.com</div>
-      </a>
-      <a href="https://turismoushuaia.com/" target="_blank" rel="noopener" class="gallery-link">
-        <div class="gallery-link-icon">↗ OFICIAL</div>
-        <div class="gallery-link-name">Turismo Ushuaia</div>
-        <div class="gallery-link-url">turismoushuaia.com</div>
-      </a>
     </div>
   </div>
 </section>
